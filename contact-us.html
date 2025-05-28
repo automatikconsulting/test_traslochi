@@ -1,0 +1,2773 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it"
+      class="">
+<head>
+    <meta charset="utf-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'https://www.traslochifratantuono.com/',
+        AccountUUID: 'cf279c6fb73a440cb358adc032ea153b',
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: '74419a73',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Tue Mar 25 12:44:00 UTC 2025',
+        ExternalUid: '89E001F7-A9F9-ADC6-8D8A-D7ECF5E8E878',
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialPostPageUuid: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'contact-us',
+        InitialPageUuid: '2fd055a2bfea4c12b61305f4c49cfcbd',
+        InitialPageId: '1140286685',
+        InitialEncodedPageAlias: 'Y29udGFjdC11cw==',
+        InitialHeaderUuid: 'a1801276f3aa4f41be3c8fdce12b77ec',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '43110',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        HasCustomDomain: true,
+        SimpleSite: false,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'it',
+        currentLocale: 'it',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: 4,
+            NavbarLiveHomePage: 'https://www.traslochifratantuono.com/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: true,
+        planID: '1000',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+        hasNativeStore: false,
+        defaultLang: 'it',
+        hamburgerMigration: null,
+        isFlexSite : false
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+
+<link rel="canonical" href="contact-us.html">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon"
+      href="https://irp.cdn-website.com/74419a73/dms3rep/multi/favicon.png"/>
+
+<link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/74419a73/site_favicon_16_1650454845464.ico"/>
+
+<!-- End favorite icons -->
+<link rel="preconnect" href="https://lirp.cdn-website.com/"/>
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script id='d-js-dmapi'>
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+<!-- loadCSS function header.jsp-->
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    
+</style>
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+
+  
+  #dmRoot:not(.editGrid) .flex-element [data-anim-extended] {
+    visibility: hidden;
+  }
+
+  
+</style>
+
+
+
+<style id="criticalCss">
+    @charset "UTF-8";.display_None,.dmPopupMask{display:none}@font-face{font-family:Poppins;font-style:normal;font-weight:200;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z1xlFQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Poppins;font-style:normal;font-weight:300;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:FontAwesome;font-display:block;src:url(https://static.cdn-website.com/fonts/fontawesome-webfont.eot?v=6);src:url(https://static.cdn-website.com/fonts/fontawesome-webfont.eot?#iefix&v=6) format("embedded-opentype"),url(https://static.cdn-website.com/fonts/fontawesome-webfont.woff?v=6) format("woff"),url(https://static.cdn-website.com/fonts/fontawesome-webfont.ttf?v=6) format("truetype"),url(https://static.cdn-website.com/fonts/fontawesome-webfont.svg#fontawesomeregular?v=6) format("svg");font-weight:400;font-style:normal}@font-face{font-family:Poppins;font-style:normal;font-weight:400;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Poppins;font-style:normal;font-weight:600;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Poppins;font-style:normal;font-weight:700;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Poppins;font-style:normal;font-weight:900;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:100 900;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}.dmInner{min-height:100vh!important;position:relative;min-width:768px!important}.dmPopup,.dmPopupMask{position:fixed;left:0}.dmDisplay_None{display:none!important}.clearfix:after{clear:both;visibility:hidden;line-height:0;height:0}.clearfix:after,.clearfix:before{content:' ';display:table}.clearfix{display:inline-block}#dm .dmWidget .icon{font-size:26px}body.dmRoot #dm .dmOuter .dmInner .dmWidget .icon.hasFontIcon{height:26px;margin-top:-13px;line-height:normal;text-align:center;background-image:none}.dmRoot .hasFontIcon{background-image:none!important}.dmPopupMask{margin:0;width:10px;z-index:1000000999;top:0}#dmRoot .dmPopup,.dmPopup,.dmPopupClose:before,[data-display-type=block]{display:block}.dmPopup{text-align:left;top:10px;width:93%;z-index:1000009999!important;box-sizing:border-box;background:#f5f5f5;overflow-y:auto;height:100%}.dmPopup .dmPopupTitle{text-align:left;font:700 19px Helvetica,Arial;margin:20px 20px 35px;color:#999}#dmPopup{opacity:0}.dmPopupClose,.dmPopupClose:before{position:absolute;visibility:visible}.dmPopupClose{border-radius:25px;width:27px;height:27px;z-index:1;background-color:rgba(255,255,255,.4);top:12px;right:12px}.dmPopupClose:before{font-size:20px;color:#000;top:3px;right:3px}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar{width:5px;height:5px}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar-track{background:rgba(0,0,0,.1)}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar-thumb{background:#c8c8c8;box-shadow:inset 0 1px 2px #454545;border-radius:45px}#dm .dmRespRow .dmRespColsWrapper{display:flex}.pswp{display:none;z-index:9999999999!important}#dm .hasBackgroundOverlay:not(.dmPopupPage):not(.layout-drawer){position:relative!important}#dm .hasBackgroundOverlay:not(.hasExtraLayerOverlay):before{display:block!important;position:absolute!important;top:0!important;left:0!important;width:100%!important;height:100%!important;content:' '!important;border-radius:inherit}#dm .dmInner .dmWidget.align-center,.align-center{margin-left:auto;margin-right:auto}.text-align-center{text-align:center}body.fix-mobile-scrolling{overflow:initial}#dmRoot{text-decoration-skip-ink:none}.dmform-title{padding-right:15px;padding-left:15px}.contact-checkable-img{width:auto;height:100px;display:none;margin:5px}.dmform .checkboxwrapper .for-checkable img.contact-checkable-img{height:100px}body{-webkit-overflow-scrolling:touch}nav{display:block}html{font-family:Source Sans Pro;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0}img{border:0;max-width:100%;-ms-interpolation-mode:bicubic;display:inline-block}button,input{font-family:inherit;font-size:100%;margin:0;line-height:normal}button{text-transform:none;-webkit-appearance:button}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}*,:after,:before{box-sizing:border-box}.dmRespRow.dmRespRowNoPadding{padding:0}.dmRespRow{padding-top:15px;padding-bottom:15px}.dmRespRow:after,.dmRespRow:before{content:' ';display:table}.dmRespRow:after{clear:both}.dmRespRow,.dmRespRow .dmRespColsWrapper{max-width:960px;position:relative;margin:0 auto;width:100%}@media screen and (min-width:1200px){.rows-1200 .dmRespRow:not(.fullBleedMode) .dmRespColsWrapper{max-width:1200px}}.dmRespRow .dmRespCol{position:relative;width:100%;display:inline-block;vertical-align:top;float:left}.dmRespRow .dmRespCol>*{max-width:100%}.dmDesktopBody .dmRespRow .large-2{position:relative;width:16.66667%}.dmDesktopBody .dmRespRow .large-5{position:relative;width:41.66667%}.dmDesktopBody .dmRespRow .large-12{position:relative;width:100%}[class*=' dm-common-icons-']{speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:dm-common-icons!important}.dm-common-icons-close:before{content:'\e901'}#dm div.dmContent [class*=' icon-'],[class*=' icon-']{font-family:FontAwesome!important;font-weight:400;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased}[class*=' icon-']:before{text-decoration:none;display:inline-block;speak:none}a [class*=' icon-']{display:inline}[class*=' icon-']{display:inline;width:auto;height:auto;line-height:normal;vertical-align:baseline;background-image:none;background-position:0 0;background-repeat:repeat;margin-top:0}.icon-star:before{content:'\f005'}.icon-phone:before{content:'\f095'}.icon-angle-down:before{content:'\f107'}#dm .dmRespRow .dmRespCol>.dmWidget{overflow:initial}@media (min-width:768px){#dm .dmRespRow .dmRespCol>.dmWidget{width:280px;max-width:100%}}@media (max-width:767px){#dm .dmInner .dmWidget{width:100%}}#dm .dmInner .dmWidget:not(.displayNone){display:inline-block}#dm .dmInner .dmWidget:not(.displayNone)[data-display-type=block]{display:block}#dm .dmInner .dmWidget{text-decoration:none;margin:10px 0;clear:both;position:relative;text-align:center;line-height:22px;box-shadow:none;background-image:none;padding:0;height:auto;border-style:solid;white-space:nowrap}#dm .dmInner .dmWidget:after{content:'';display:inline-block;height:100%;vertical-align:middle;width:0;margin-right:-.25em}#dm .dmInner .dmWidget .iconBg{position:absolute;left:0;width:50px;top:50%;margin-top:-13px}#dm .dmWidget .text{display:inline-block;vertical-align:middle;font-size:1.125em;line-height:normal;white-space:normal;padding:10px 7px;max-width:98%}#dm .dmRespRow.dmRespRowNoPadding,.dmContent,.dmInner ul:not(.defaultList),DIV.dmBody{padding:0}html:not(.ios-preview) #dm .hasStickyHeader .dmInner div.dmHeaderContainer{position:fixed!important;z-index:101;width:100%;min-width:768px}.dmNewParagraph[data-version]{line-height:initial}.dmNewParagraph[data-version] .text-align-center{text-align:center!important}.dmNewParagraph[data-version] h1,.dmNewParagraph[data-version] h3,.dmNewParagraph[data-version] p{margin-top:0;margin-bottom:0}.imageWidget a{font-style:italic;text-align:center}#dm .dm-layout-sec div.dmInner .dmform[data-layout=layout-3] .dmforminput>:not(label):not(div):not(small):not(.frc-banner),#dm div.dmInner .dmform[data-layout=layout-3] .dmforminput>:not(label):not(div):not(small):not(.frc-banner){background:0;border:0;border-radius:0;-webkit-appearance:none;border-bottom:1px solid;height:30px}#dm div.dmInner .dmform .dmforminput label[hide=true]{display:none}.dmform .dmforminput label{display:block;overflow:hidden;text-overflow:ellipsis}#dm div.dmInner .native-inputs .contact-checkable-container .contact-checkable-img{margin-left:0;margin-bottom:0}*{border:0 solid #333;scrollbar-arrow-color:#fff;scrollbar-track-color:#F2F2F2;scrollbar-face-color:silver;scrollbar-highlight-color:silver;scrollbar-3dlight-color:silver;scrollbar-shadow-color:silver;scrollbar-darkshadow-color:silver;scrollbar-width:12px}body{width:100%;overflow:hidden;-webkit-text-size-adjust:100%!important;-ms-text-size-adjust:100%!important}A IMG{border:none}h1,h3,ul{margin-left:0;margin-right:0}.dmInner *{-webkit-font-smoothing:antialiased}.clearfix,a,img,li,ul{vertical-align:top}#iscrollBody,#site_content{position:relative}.dmOuter{word-wrap:break-word}.dmInner{font-size:16px;background:#fff;color:#666}.dmDesktopBody .dmInner{min-width:960px}.dmInner a{color:#463939}.dmHeader{background:#68ccd1;color:#666;text-align:center;position:relative;width:100%;max-width:100%}#dm .dmBody .dmRespRowsWrapper,#innerBar.lineInnerBar,.dmLargeBody .dmBody .dmRespRowsWrapper{background-color:transparent}DIV.dmBody{clear:both}.dmContent{margin:0}#site_content ul:not(.defaultList){-webkit-padding-start:0;-moz-padding-start:0;list-style-position:inside}#innerBar{position:relative;height:36px;width:100%;font-size:20px;margin:0;z-index:80}.dmRespRowsWrapper{max-width:960px;margin:0 auto}.dmRespCol>[dmle_extension]:not(:first-child){margin-top:10px}.dmLargeBody .imageWidget:not(.displayNone){display:inline-block;max-width:100%}.imageWidget:not(.displayNone) img{width:100%}h3{font-weight:400;font-size:23px}#dm .dmRespColsWrapper{display:block}.dmNewParagraph{text-align:left;margin:8px 0;padding:2px 0}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol,.dmLargeBody .fHeader .dmRespRow .dmRespCol{padding-left:.75%;padding-right:.75%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:first-child,.dmLargeBody .fHeader .dmRespRow .dmRespCol:first-child{padding-left:0;padding-right:1.5%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:last-child,.dmLargeBody .fHeader .dmRespRow .dmRespCol:last-child{padding-right:0;padding-left:1.5%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:only-child{padding-left:0;padding-right:0}#innerBar.lineInnerBar{display:table;width:100%;box-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none;font-size:20px;margin-top:30px;margin-bottom:30px;color:#666}.innerPageTitle{display:block;text-align:center;color:#f7f7f7;margin:3px 65px;padding:6px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-sizing:border-box;word-wrap:normal}#dm .dmwidget-title,.lineInnerBar .innerPageTitle{text-align:left;text-transform:capitalize;white-space:nowrap}#innerBar .titleLine{display:table-cell;vertical-align:middle;width:50%}.dmPageTitleRow:not(#innerBar){display:none}.titleLine hr{min-height:1px;background-color:rgba(102,102,102,.2)}.lineInnerBar .innerPageTitle{display:table-cell;vertical-align:middle;margin:0;padding:4px 15px 0;color:#666;font-family:inherit}.dmStandardDesktop{display:block}#dmFirstContainer .dmRespRowsWrapper:after,#dmFirstContainer .dmRespRowsWrapper:before{content:"";display:table}.dmInner a{outline:0;vertical-align:inherit}.dmLinksMenu>ul{display:block;margin:0;font-size:inherit}.standardHeaderLayout .dmHeader{float:none;display:block;height:auto}.dmStandardDesktop{margin:0 auto}#dm h3.dmwidget-title[hide=true]{display:none}#dm .dmwidget-title{margin:10px 0;font-size:23px;text-shadow:none;overflow:hidden;text-overflow:ellipsis;word-wrap:normal}#dm .dmDivider{display:block;margin:10px 0}body{background-color:#eee}.dmDivider{min-height:2px;border:currentColor;color:grey;background:0 0}#dm .dmDividerWrapper{display:block}.main-navigation.unifiednav{display:flex;justify-content:flex-start;align-items:stretch;overflow:visible}.main-navigation.unifiednav ul{list-style:none;padding:0;margin:0;font-size:1rem}.main-navigation.unifiednav .unifiednav__container{display:flex;justify-content:flex-start;list-style:none}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap{display:flex;justify-content:flex-start;position:relative;font-weight:400}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::before{content:'';-ms-grid-row-align:center;align-self:center;font-weight:700}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item{display:flex;justify-content:flex-start;align-items:center;flex-direction:row;color:inherit;text-decoration:none;position:relative;padding:12px 15px;margin:0;font-weight:inherit;letter-spacing:.03em}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{padding:0 15px}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item .nav-item-text{white-space:nowrap}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::before{content:'';width:100%;height:0;border:0 solid transparent;border-top-color:currentColor;display:block;opacity:0}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected .nav-item-text::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected .nav-item-text::before{opacity:1}.main-navigation.unifiednav.effect-bottom{padding:calc(12px - .2em - 2px) 15px}.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after,.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::before{transform:scaleX(0);border-top-width:2px}.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after{margin-top:.2em}.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::before{margin-bottom:.2em;border-top-color:transparent}.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected .nav-item-text::after,.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected .nav-item-text::before{transform:scaleX(1)}.main-navigation.unifiednav .unifiednav__container .unifiednav__item:not(.unifiednav__item_has-sub-nav) .icon{display:none}.main-navigation.unifiednav:not(.unifiednav_vertical)>.unifiednav__container{justify-content:inherit}#dm .p_hfcontainer nav.main-navigation.unifiednav{min-width:9em!important;text-align:initial!important}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL])>.unifiednav__container{flex-wrap:wrap;justify-content:inherit}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL])>.unifiednav__container .nav-item-text::before{text-align:left}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{content:''}#dm .dmBody .dmRespRowsWrapper{max-width:none}.dmLargeBody .dmRespRow{width:100%;max-width:none;margin-left:0;margin-right:0;padding-left:40px;padding-right:40px}.dmStandardDesktop .dmHeader{background-color:#68ccd1;max-width:100%}#dm div.dmRespCol>*{line-height:1.5}#dm .dmRespCol div.dmNewParagraph,#dm .dmform .dmforminput label,#dm div.dmInner,#dm div.dmInner .dmRespCol{font-family:Montserrat,"Montserrat Fallback";font-weight:300;color:rgba(102,102,102,1)}#dm div.dmContent h1,#dm div.dmContent h3{font-family:Poppins,"Poppins Fallback";direction:ltr;font-style:normal;text-decoration:none}#dm div.dmContent h1{color:#fff;font-weight:700}#dm div.dmContent h3{color:#000;font-weight:400;font-size:30px}#dm div.dmContent .dmNewParagraph[data-version] h1{text-decoration:inherit}#dm div.dmContent .dmNewParagraph[data-version] h1 *{text-decoration:none}#dm div.dmContent .dmNewParagraph[data-version] h3{text-decoration:inherit}#dm div.dmContent .dmNewParagraph[data-version] h3 *{text-decoration:none}#dm div.dmContent h1{font-size:36px}#dm .dmRespCol div.dmNewParagraph,#dm .dmform .dmforminput label,#dm div.dmInner,#dm div.dmInner .dmRespCol{font-size:17px}@media all{:root{--btn-text-direction:ltr;--btn-border-r-color:var(--btn-border-color);--btn-border-l-color:var(--btn-border-color);--btn-border-b-width:var(--btn-border-width);--btn-border-width:0px;--btn-border-radius:0px;--btn-border-t-width:var(--btn-border-width);--btn-border-tl-radius:var(--btn-border-radius);--btn-border-br-radius:var(--btn-border-radius);--btn-border-bl-radius:var(--btn-border-radius);--btn-bg-color:rgb(189, 84, 78);--btn-border-color:rgb(247, 247, 247);--btn-border-tr-radius:var(--btn-border-radius);--btn-border-r-width:var(--btn-border-width);--btn-bg-image:none;--btn-border-b-color:var(--btn-border-color);--btn-border-l-width:var(--btn-border-width);--btn-border-t-color:var(--btn-border-color);--btn-text-align:center;--btn-text-color:rgb(255, 255, 255);--btn-text-decoration:none;--btn-text-font-weight:400;--btn-icon-color:rgb(247, 247, 247);--btn-icon-fill:rgb(247, 247, 247);--btn-icon-wrpr-display:none;--btn-hover-border-b-color:var(--btn-hover-border-color);--btn-hover-bg:rgb(0, 0, 0);--btn-hover-border-t-color:var(--btn-hover-border-color);--btn-hover-border-r-color:var(--btn-hover-border-color);--btn-hover-border-l-color:var(--btn-hover-border-color);--btn-hover-border-color:var(--btn-border-color);--btn-hover-text-color:var(--btn-text-color);--btn-hover-text-font-weight:var(--btn-text-font-weight);--btn-hover-text-decoration:var(--btn-text-decoration);--btn-hover-text-font-style:var(--btn-text-font-style)}}#dm .dmOuter .dmInner .dmWidget[data-buttonstyle=CONTRAST_ICON]{background-clip:border-box;box-shadow:0 1px 1px rgba(5,5,6,.5);padding-left:46px;border-radius:0}#dm .dmOuter .dmInner .dmWidget[data-buttonstyle=CONTRAST_ICON] .iconBg{background-color:#f7f7f7;top:0;bottom:0;margin:0;width:50px;text-align:center;display:block;height:100%;border-top-left-radius:inherit;border-bottom-left-radius:inherit;opacity:1}#dm .dmOuter .dmInner .dmWidget[data-buttonstyle=CONTRAST_ICON] .icon{display:inline-block;float:none;position:absolute;top:50%;left:0;right:0}#dm .dmWidget:not([data-buttonstyle]){overflow:initial;background-clip:border-box;border-radius:1px}#dm .dmWidget:not([data-buttonstyle]) .text{padding:16px 0}#dm .dmWidget:not([data-buttonstyle]) .iconBg{display:none}@media (min-width:768px){#dm .dmRespRow .dmRespCol>.dmWidget{width:222px}#dm .dmRespRow .dmRespCol>.dmWidget[data-buttonstyle]:not([data-buttonstyle=BORDER_SHORT]){width:280px}}#dm div.dmInner #site_content .dmWidget,#dm div.dmInner .dmHeader .dmWidget{background-color:var(--btn-bg-color);background-image:var(--btn-bg-image);border-color:var(--btn-border-color);border-bottom-color:var(--btn-border-b-color);border-left-color:var(--btn-border-l-color);border-right-color:var(--btn-border-r-color);border-top-color:var(--btn-border-t-color);border-radius:var(--btn-border-radius);border-bottom-left-radius:var(--btn-border-bl-radius);border-bottom-right-radius:var(--btn-border-br-radius);border-top-left-radius:var(--btn-border-tl-radius);border-top-right-radius:var(--btn-border-tr-radius);border-width:var(--btn-border-width);border-bottom-width:var(--btn-border-b-width);border-left-width:var(--btn-border-l-width);border-right-width:var(--btn-border-r-width);border-top-width:var(--btn-border-t-width);direction:var(--btn-text-direction);text-align:var(--btn-text-align)}#dm .p_hfcontainer a.u_1822935326,#dm .p_hfcontainer div.u_1079718041,a.u_1822935326{min-width:0!important;text-align:center!important}#dm div.dmInner #site_content .dmWidget span.text{color:var(--btn-text-color);font-weight:var(--btn-text-font-weight);text-decoration:var(--btn-text-decoration)}#dm div.dmInner #site_content .dmWidget span.icon,#dm div.dmInner .dmHeader .dmWidget span.icon{color:var(--btn-icon-color);fill:var(--btn-icon-fill)}#dm div.dmInner #site_content .dmWidget:not([data-buttonstyle]) .iconBg{display:var(--btn-icon-wrpr-display)}#dm .p_hfcontainer div.u_1079718041 img{border-radius:0!important;-moz-border-radius:0!important;-webkit-border-radius:0!important}#dm .p_hfcontainer .u_1056998847.main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .p_hfcontainer .u_1056998847.main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{font-size:14px!important}a.u_1822935326 .iconBg{display:inline!important}#dm .dmBody a.u_1023408985,#dm .p_hfcontainer a.u_1822935326,#dm .p_hfcontainer div.u_1079718041,a.u_1822935326{display:block!important;top:0!important;float:none!important;left:0!important}a.u_1822935326{border-radius:0!important;-moz-border-radius:0!important;-webkit-border-radius:0!important;border-style:solid!important;border-width:1px!important;border-color:rgba(104,204,209,1)!important}#dm .p_hfcontainer div.u_1431205013{background-color:rgba(255,255,255,1)!important}#dm .dmInner div.dmHeader,#dm .dmInner div.dmHeader.u_hcontainer,#dm .dmInner div.u_hcontainer{background-color:rgba(0,0,0,0)!important}#dm .p_hfcontainer nav.u_1056998847.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{color:rgba(0,0,0,1)!important;font-size:15px!important}#dm .p_hfcontainer nav.u_1056998847.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected{font-weight:700!important}#dm .p_hfcontainer nav.u_1056998847.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after{border-top-color:rgba(150,80,90,1)!important}#dm .p_hfcontainer a.u_1822935326 span.icon{color:rgba(150,80,90,1)!important;fill:rgba(150,80,90,1)!important}#dm .p_hfcontainer .u_1056998847.main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .p_hfcontainer .u_1056998847.main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{font-size:15px!important}#dm .p_hfcontainer .u_1056998847.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{margin:0!important;padding:0 6px 0 7px!important}#dm .dmInner div.fHeader .dmHeader[freeheader=true]{padding-top:12px!important;padding-bottom:12px!important}.fHeader #hcontainer.dmHeader[freeheader=true]{padding-top:initial!important;padding-bottom:initial!important}.stickyHeaderSpacer{height:90.09px!important}@media (min-width:1025px){.responsiveTablet .stickyHeaderSpacer{height:131px!important}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .stickyHeaderSpacer{height:131px!important}}a.u_1822935326{width:240px!important;height:60px!important;position:relative!important;max-width:100%!important;padding:0 0 0 46px!important}#dm .p_hfcontainer div.u_1020422699{padding-left:10px!important}#dm .p_hfcontainer div.u_1145781157{padding:0!important}#dm .p_hfcontainer div.u_1386385377{padding-left:0!important}#dm .dmInner div.fHeader.dmHeaderContainer #hcontainer.dmHeader[freeheader=true]{margin:0!important;padding:0!important}#dm .p_hfcontainer div.u_1079718041{width:123px!important;position:relative!important;max-width:100%!important;height:116px!important;padding:0!important;margin:5px auto 0!important}#dm .p_hfcontainer div.u_1431205013{width:auto!important;padding:5px 35px!important;margin:0!important}#dm .p_hfcontainer a.u_1822935326{border-color:rgba(150,80,90,1)!important;width:231.25px!important;position:relative!important;height:50px!important;max-width:100%!important;padding:0 0 0 46px!important;margin:30px 0 0 auto!important}#dm .p_hfcontainer nav.u_1056998847{float:none!important;top:0!important;left:0!important;width:calc(100% - 0px)!important;position:relative!important;height:auto!important;max-width:100%!important;justify-content:flex-start!important;align-items:stretch!important;min-width:25px!important;text-align:start!important;padding:7px 15px 6.8px!important;margin:27px 0 0!important}#dm .dmBody .u_1332787745:before{opacity:.5!important;background-color:#fff!important}#dm .dmBody div.u_1332787745:before{background-color:rgba(0,0,0,1)!important;opacity:.2!important}#dm .dmBody hr.u_1614048869{background-color:#666!important}#dm .dmBody div.u_1530432004 hr{color:rgba(150,80,90,1)!important;background:0 0!important;height:0!important;background-size:initial!important;min-height:0!important;border-color:currentColor!important;border-width:3px 1px 1px!important;border-top-style:solid!important}#dm .dmBody div.u_1734701643{padding:0!important;margin:0!important}#dm .dmBody a.u_1023408985{width:190px!important;position:relative!important;height:50px!important;max-width:100%!important;min-width:0!important;text-align:center!important;padding:0!important;margin:30px auto 0!important}#dm .dmBody div.u_1395975252,#dm .dmBody div.u_1708048968{top:0!important;min-width:25px!important;display:block!important}#dm .dmBody div.u_1395975252{float:none!important;max-width:629px!important;left:0!important;width:calc(100% - 201px)!important;position:relative!important;height:auto!important;padding:2px 0!important;margin:8px auto!important}#dm .dmBody div.u_1401191197,#dm .dmBody div.u_1530432004{min-width:0!important;text-align:center!important;float:none!important;left:0!important;position:relative!important;height:auto!important}#dm .dmBody div.u_1530432004{top:0!important;max-width:100%!important;width:90px!important;display:block!important;padding:0!important;margin:0 auto!important}#dm .dmBody div.u_1401191197{background-color:rgba(243,243,243,1)!important;top:auto!important;max-width:none!important;width:auto!important;padding:70px 90px!important}#dm .dmBody div.u_1708048968{float:none!important;max-width:761px!important;left:0!important;width:calc(100% - 135px)!important;position:relative!important;height:auto!important;padding:0!important;margin:8px auto!important}#dm .dmBody div.u_1478559283,#dm .dmBody div.u_1974335256{float:none!important;top:0!important;left:0!important;position:relative!important;min-width:25px!important;height:auto!important;padding:2px 0!important}#dm .dmBody div.u_1974335256{max-width:705px!important;width:calc(100% - 163px)!important;display:block!important;margin:8px auto!important}#dm .dmBody div.u_1478559283{max-width:699px!important;width:calc(100% - 166px)!important;margin:0 auto 8px!important}#dm .dmBody div.u_1332787745{background-repeat:no-repeat!important;background-image:url(https://lirp.cdn-website.com/74419a73/dms3rep/multi/opt/129353432_208220144105493_1018300694455736983_n-b0124bda.jpg),url(data:image/png-2880w;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TpUUqHSwo4pChOlkQFemoVShChVArtOpgcukXNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APEzc1J0UVK/F9aaBHjwXE/3t173L0DhEaFaVbPBKDptplOJsRsblUMvEJAGEEMIi4zy5iTpBQ8x9c9fHy9i/Es73N/jn41bzHAJxLPMsO0iTeIZzZtg/M+cYSVZJX4nHjcpAsSP3JdafEb56LLAs+MmJn0PHGEWCx2sdLFrGRqxNPEUVXTKV/ItljlvMVZq9RY+578haG8vrLMdZojSGIRS5AgQkENZVRgI0arToqFNO0nPPzDrl8il0KuMhg5FlCFBtn1g//B726twtRkKymUAHpfHOdjFAjsAs2643wfO07zBPA/A1d6x19tAPFP0usdLXoEhLeBi+uOpuwBlzvA0JMhm7Ir+WkKhQLwfkbflAMGboG+tVZv7X2cPgAZ6ip1AxwcAmNFyl73eHewu7d/z7T7+wFwJnKmZ9+MiwAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+UCDwksLkLIPkkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAC0lEQVQI12NgAAIAAAUAAeImBZsAAAAASUVORK5CYII=)!important;width:auto!important;background-attachment:initial!important;background-size:cover!important;background-position:50% 50%!important;padding:140px 90px!important}.font-size-24,.size-24{font-size:24px!important}
+    .dmDesktopBody [data-anim-desktop]:not([data-anim-desktop='none']) {
+      visibility: hidden;
+    }
+
+    
+</style>
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Poppins Fallback";
+  src: local('Arial');
+  ascent-override: 92.326%;
+  descent-override: 30.7753%;
+  line-gap-override: 8.793%;
+  size-adjust: 113.7274%;
+}@font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }
+</style>
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.traslochifratantuono.com/contact-us">
+
+  <title>
+    Vendita e restauro mobili | Marsicovetere  (PZ) | Traslochi Fratantuono
+  </title>
+  <meta name="keywords" content="Vendita e restauro mobili"/>
+  <meta name="description" content="Stai cercando mobili di antiquariato, devi eseguire un trasloco e vuoi avere la certezza che nessun mobile sia rovinato? Affidati a Traslochi Fratantuono."/>
+
+  <script id="iol-df-head" src="https://iol-website.italiaonline.it/df/iol-df.js" type="text/javascript">
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  </script>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Vendita e restauro mobili | Marsicovetere  (PZ) | Traslochi Fratantuono"/>
+  <meta name="twitter:description" content="Stai cercando mobili di antiquariato, devi eseguire un trasloco e vuoi avere la certezza che nessun mobile sia rovinato? Affidati a Traslochi Fratantuono."/>
+  <meta property="og:description" content="Stai cercando mobili di antiquariato, devi eseguire un trasloco e vuoi avere la certezza che nessun mobile sia rovinato? Affidati a Traslochi Fratantuono."/>
+  <meta property="og:title" content="Vendita e restauro mobili | Marsicovetere  (PZ) | Traslochi Fratantuono"/>
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="contact-us"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody responsiveTablet "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true"> <div dmtemplateid="StandardLayoutMultiD" class="standardHeaderLayout dm-bfs dm-layout-sec hasAnimations hasStickyHeader rows-1200 dmPageBody d-page-1716942098 dmFreeHeader" id="dm-outer-wrapper" data-page-class="1716942098" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div> <div id="iscrollBody"> <div id="site_content"> <div class="dmHeaderContainer fHeader d-header-wrapper"> <div id="hcontainer" class="dmHeader p_hfcontainer u_hcontainer" freeheader="true" layout="78f5c343822e4eb3aac27f4ad5d13812===header" data-scrollable-target="body" data-scrollable-target-threshold="1" data-scroll-responder-id="1" logo-size-target="83%"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack" id="1709005236"> <div class="dmRespRow dmDefaultListContentRow u_1431205013" style="text-align:center" id="1431205013"> <div class="dmRespColsWrapper" id="1463529984"> <div class="u_1020422699 dmRespCol small-12 large-5 medium-5" id="1020422699"> <span id="1892166747"></span> 
+ <nav class="u_1056998847 effect-bottom main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_1" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" id="1056998847" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="index.html" class="unifiednav__item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="mercatino-dellusato.html" class="unifiednav__item  dmUDNavigationItem_010101628177  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Mercatino dell'usato
+        " data-auto="page-text-style">Mercatino dell'usato<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="contact-us.html" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101334149  " target="" data-target-page-alias="" data-auto="selected-page"> <span class="nav-item-text " data-link-text="
+         Contatti
+        " data-auto="page-text-style">Contatti<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="u_1145781157 small-12 dmRespCol large-2 medium-2" id="1145781157"> <div class="u_1079718041 imageWidget align-center" data-widget-type="image" id="1079718041" data-element-type="image" data-binding="W3siYmluZGluZ05hbWUiOiJpbWFnZSIsInZhbHVlIjoic2l0ZV9pbWFnZXMubG9nbyJ9XQ=="> <a href="index.html" id="1437649418"><img src="https://lirp.cdn-website.com/74419a73/dms3rep/multi/opt/05b6a4e2-9dd0-428b-a738-325a6f4d9139-147w.jpeg" id="1512000838" class="" data-dm-image-path="https://irp.cdn-website.com/74419a73/dms3rep/multi/05b6a4e2-9dd0-428b-a738-325a6f4d9139.jpeg" alt="TRASLOCHI FRATANTUONO" title="TRASLOCHI FRATANTUONO" data-diy-image="" onerror="handleImageLoadError(this)" height="119.53125" width="123.0"/></a> 
+</div> 
+</div> 
+ <div class="u_1386385377 dmRespCol small-12 large-5 medium-5" id="1386385377"> <span id="1862994785"></span> 
+ <a class="u_1822935326 default align-center dmCall voipReplacement dmWidget dmNoMark dmWwr" href="tel:+39 339 3523222" contenteditable="false" onclick=";return dm_gaq_push_event('ClickToCall', 'Call',null,'74419a73', this);" id="1822935326" dmle_extension="clicktocall" data-element-type="clicktocall" data-binding="W3siYmluZGluZ05hbWUiOiJwaG9uZSIsInZhbHVlIjoiY29udGVudF9saWJyYXJ5Lmdsb2JhbC5waG9uZS5pb2x0ZWxlZm9ubyJ9XQ==" data-buttonstyle="CONTRAST_ICON" wr="true" data-display-type="block" icon="true" surround="true" description="Chiama ora" adwords="" icon-name="icon-phone" phone="+39 339 3523222" text="" image=""> <span class="iconBg" aria-hidden="true"> <span class="icon hasFontIcon icon-phone"></span> 
+</span> 
+ <span class="text">Chiama ora</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="stickyHeaderSpacer" id="stickyHeaderSpacer" data-new="true"></div> 
+ <div class="dmRespRow dmRespRowStable dmRespRowNoPadding dmPageTitleRow "> <div class="dmRespColsWrapper"> <div class="large-12 dmRespCol"> <div id="innerBar" class="innerBar lineInnerBar dmDisplay_None"> <div class="titleLine display_None"><hr/></div> 
+<!-- Page title is hidden in css for new responsive sites. It is left here only so we don't break old sites. Don't copy it to new layouts --> <div id="pageTitleText"> <div class="innerPageTitle">Contatti</div> 
+</div> 
+ <div class="titleLine display_None"><hr/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_contact-us dm-home-page" themewaschanged="true"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent" role="main"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" id="1716942098"> <div class="dmRespRow u_1332787745 hasBackgroundOverlay dmSectionNoParallax" id="1332787745"> <div class="dmRespColsWrapper" id="1703553456"> <div class="dmRespCol small-12 u_1734701643 medium-12 large-12" id="1734701643"> <div class="u_1974335256 dmNewParagraph" id="1974335256" data-element-type="paragraph" style="transition: none 0s ease 0s; text-align: left; display: block;" data-version="5"> <h1 class="text-align-center"><span class="" style="font-weight:200;display:initial;font-family:Poppins, 'Poppins Fallback';"><span style="font-weight:200;display:initial;font-family:Poppins, 'Poppins Fallback';">Devi vendere un</span> 
+</span><span style="font-weight:900;display:initial;font-family:Poppins, 'Poppins Fallback';">mobile antico?</span><span style="display: initial;"><br/></span></h1> 
+</div> <div class="u_1395975252 dmNewParagraph" id="1395975252" data-element-type="paragraph" data-version="5" background-image":""}"="" style="text-align: left;"><p class="text-align-center size-24 m-size-19"><span class="m-font-size-19 font-size-24" style="color:rgb(255, 255, 255);font-weight:300;display:initial;font-family:Poppins, 'Poppins Fallback';">Traslochi Fratantuono si occupa anche di vendita e restauro mobili antichi a Villa D'agri. Ti aspettiamo!</span><span style="display: initial;"><br/></span></p></div> <a data-display-type="block" class="u_1023408985 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="contact-us.html#contatti" data-element-type="dButtonLinkId" id="1023408985"> <span class="iconBg" id="1561049478"> <span class="icon hasFontIcon icon-star" id="1585055394"></span> 
+</span> 
+ <span class="text" id="1073087835">Contatti</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1401191197 dmRespRow" style="text-align: center;" id="1401191197"> <div class="dmRespColsWrapper" id="1793959318"> <div class="u_1149598068 dmRespCol small-12 medium-12 large-12" id="1149598068"> <div class="u_1478559283 dmNewParagraph" id="1478559283" data-element-type="paragraph" data-version="5" background-image":""}"="" style="transition: none 0s ease 0s; text-align: left; display: block;"> <h3 class="text-align-center"><span style="font-weight:900;display:initial;font-family:Poppins, 'Poppins Fallback';">Dove si trova la ditta Traslochi Fratantuono e Mercatino dell'Usato: contatti</span></h3> 
+</div> <div class="u_1530432004 dmDividerWrapper clearfix" id="1530432004" data-element-type="dDividerId" layout="divider-style-1" data-widget-version="2"><hr class="u_1614048869 dmDivider" style="min-height: 2px; border:none; background:grey" id="1614048869"/></div> 
+ <div class="u_1708048968 dmNewParagraph" id="1708048968" style="transition: none 0s ease 0s; text-align: left; display: block;" data-version="5"><p class="m-size-16 text-align-center"><span class="m-font-size-16" style="display: initial;">Traslochi Fratantuono &egrave; una ditta specializzata in traslochi nazionali e internazionali, inoltre mette a disposizione numerosi servizi, tra cui il restauro dei mobili, la vendita di mobili antichi e di mobili moderni usati, la costruzione di tettoie e gazebi in legno. La collaborazione di personale qualificato rende ogni operazione sicura.</span></p><p class="text-align-center m-size-16"><span class="m-font-size-16" style="display: initial;">La ditta Traslochi Fratantuono si trova in via Cotura, 19 - 85050 Barricelle - Marsicovetere (PZ). Inoltre &egrave; possibile contattare l'azienda all'indirizzo e-mail mercatinodellusatodal2000@gmail.com.</span><span style="display: initial;"><br/></span></p><p class="m-size-16 text-align-center"><span class="m-font-size-16" style="display: initial;">Stai cercando mobili di antiquariato, devi eseguire un trasloco e vuoi avere la certezza che nessun mobile sia rovinato? Affidati a Traslochi Fratantuono.</span><span style="display: initial;"><br/></span></p></div></div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_pa_3671590" id="pa_3671590"> <div class="dmRespColsWrapper" id="1172334311"> <div class="dmRespCol small-12 large-6 medium-6 u_1729524130" id="1729524130"> <div class="u_1261459624 dmNewParagraph" id="1261459624" data-element-type="paragraph" data-version="5" data-styletopreserve="{" background-image":""}"=""> <h3 class="text-align-left"><span style="font-weight: 600; display: initial;">Compila il form</span></h3> 
+</div> <div class="u_1193573191 dmDividerWrapper clearfix" id="1193573191" data-element-type="dDividerId" layout="divider-style-1" data-widget-version="2"><hr class="u_1967715900 dmDivider" style="min-height: 2px; border:none; background:grey" id="1967715900"/></div> 
+ <div class="u_contatti dmform default native-inputs" data-element-type="dContactUsRespId" data-captcha-position="bottomleft" id="contatti" data-layout="layout-3" data-anchor="contatti"> <h3 class="dmform-title dmwidget-title" id="1988947868" hide="true">Contattaci</h3> 
+ <div class="dmform-wrapper" id="1773431338" captcha-lang="it"> <form method="post" class="dmRespDesignRow" locale="ITALIAN" id="1286851838"> <div class="dmforminput small-12 dmRespDesignCol newLine medium-12 large-12" id="1417314906"> <label for="1449925816" id="1923849666" class="" hide="true" data-dm-for="dmform-64295">Testo libero</label> 
+ <div class="freetextwrapper" name="dmform-64295" id="1449925816"> <p class="rteBlock" id="1840783903">* Campi obbligatori</p> 
+</div> 
+<input type="hidden" name="label-dmform-64295" value="Testo libero" id="1714849046" class=""/></div> 
+ <div class="dmforminput required  small-12 dmRespDesignCol medium-12 large-12" id="1709311749"> <label for="1429697690" id="1260506456" data-dm-for="dmform-0">* Nome:</label> 
+<input type="text" class="" name="dmform-0" id="1429697690"/><input type="hidden" name="label-dmform-0" value="* Nome:" id="1350889350" class=""/></div> 
+ <div class="dmforminput small-12 dmRespDesignCol required medium-12 large-12" id="1644698054"> <label for="1236450511" id="1235698431" data-dm-for="dmform-4">* Cognome:</label> 
+<input type="text" name="dmform-4" id="1236450511"/><input type="hidden" name="label-dmform-4" value="* Cognome:" id="1688861613" class=""/></div> 
+ <div class="dmforminput required  small-12 dmRespDesignCol medium-12 large-12" id="1212934238"> <label for="1293922051" id="1619680069" data-dm-for="dmform-1">* E-mail:</label> 
+<input type="email" class="" name="dmform-1" id="1293922051"/><input type="hidden" name="label-dmform-1" value="* E-mail:" id="1156853895" class=""/></div> 
+ <div class="dmforminput  small-12 dmRespDesignCol medium-12 large-12" id="1126215161"> <label for="1068285272" id="1294268429" data-dm-for="dmform-2">Telefono:</label> 
+<input type="tel" class="" name="dmform-2" id="1068285272"/><input type="hidden" name="label-dmform-2" value="Phone" id="1620332887"/></div> 
+ <div class="dmforminput large-12 medium-12 dmRespDesignCol small-12 required newLine" id="1596971188"> <label for="1528520563" id="1763206201" data-dm-for="dmform-3">* Messaggio:</label> 
+ <textarea name="dmform-3" id="1528520563"></textarea> 
+<input type="hidden" name="label-dmform-3" value="* Messaggio:" id="1616215209" class=""/></div> 
+ <div class="dmforminput small-12 dmRespDesignCol required newLine medium-12 large-12" id="1324835687"> <label for="1557338285" id="1331406974" class="" hide="true" data-dm-for="dmform-5">Autorizzazione utilizzo dati</label> 
+ <div class="optinwrapper" id="1358843070"> <div id="1119731642" class="contact-checkable-container"> <label for="1557338285" class="for-checkable" id="1164255768"><input type="checkbox" value="true" name="dmform-5" id="1557338285" class="checkable-input"/> <div id="1754531731"> <p class="rteBlock" id="1768395737" style="vertical-align: bottom;">Ho letto <a class="privacyPolicy" style="color: inherit;">l&rsquo;informativa</a> 
+e autorizzo il trattamento dei miei dati personali per le finalit&agrave; ivi indicate.</p> 
+</div> 
+ <span class="img-wrapper"><img alt="" id="1287649154" class="contact-checkable-img" onerror="handleImageLoadError(this)"/></span> 
+</label> 
+</div> 
+</div> 
+<input type="hidden" name="label-dmform-5" value="Autorizzazione utilizzo dati" id="1315483155" class=""/></div> 
+ <div class="dmforminput small-12 dmRespDesignCol newLine medium-12 large-12" id="1919720967"> <label for="1571456554" id="1040616229" class="" hide="true" data-dm-for="dmform-64294">Consenso iniziative commerciali</label> 
+ <div class="checkboxwrapper horizontal" id="1989136186"> <div id="1846454511" class="contact-checkable-container"> <label for="1571456554" class="for-checkable" id="1551649033"><input type="checkbox" value="Ricevi offerte speciali e promozioni dedicate." name="dmform-64294" id="1571456554" class="checkable-input"/> <span id="1585859350" class="mktgConsent" style="margin-left: 0px; vertical-align: bottom;">Ricevi offerte speciali e promozioni dedicate.</span> 
+ <span class="img-wrapper"><img alt="" id="1200993461" class="contact-checkable-img" onerror="handleImageLoadError(this)"/></span> 
+</label> 
+</div> 
+</div> 
+<input type="hidden" name="label-dmform-64294" value="Consenso iniziative commerciali" id="1365151405" class=""/></div> 
+ <span id="1995029029" class="dmWidgetClear"></span> 
+ <div class="dmformsubmit dmWidget R" id="1773211843"><input class="" name="submit" type="submit" value="Invia messaggio" id="1122718075"/></div> 
+<input name="dmformsendto" type="hidden" value="O0wrseIfFLsUxliAZZQAsedKPi/+iW7QXAY0bpHeQS4OnUm7zC7p/u4YzXA/kRBW/aszBHJnGyRKqT/UtxxJVGSoojrduF5h" id="1621564391" class="" data-dec="true"/><input class="dmActionInput" type="hidden" name="action" value="/_dm/s/rt/widgets/dmform.submit.jsp" id="1535771987"/><input name="dmformsubject" type="hidden" value="Messaggio dal tuo sito Italiaonline" id="1667074528" class=""/><input name="dmformfrom" type="hidden" value="IOL Website" id="1091824215" class=""/><input name="dmformsubmitparams" type="hidden" value="8mpKnCSiNQXK/d9M7IDrS0Hahh0tGT3jysyALHJ6bCnaYlhiZGS7wmFIFG7Pl5N00BNwPlHx5+mTY2pB573B8u8nB+NhKbfg76YKscBqdoumRUfAab/g+nfHYa+KpkNANVQHAHqJrxYqGboZT+d17Pwvlp6GqcTrVFmjhDezBhShdlxEXW7AY1C4v0/8MOKJk+tjATJxF0OlQyzT0CwF69qGh7Cr6eMrNiEyY95lUCQy3HcTf+BbPSuRDS+igKuin4GEPBYvnON8yWCp38cqpP2HGz6vfqBkVlFWD15wsdQ=" data-dec="true"/><input type="hidden" name="page_uuid" value="2fd055a2bfea4c12b61305f4c49cfcbd"/></form> 
+</div> 
+ <div class="dmform-success" style="display:none" id="1223540240">Grazie per averci contattato.<br id="1685223373"/>Ti risponderemo il pi&ugrave; presto possibile.</div> 
+ <div class="dmform-error" style="display:none" id="1627074137">Si &egrave; verificato un errore durante l'invio del messaggio.<br id="1860364268"/>Riprova in un secondo momento.</div> 
+</div> 
+</div> 
+ <div class="dmRespCol large-6 medium-6 small-12 u_orari-e-contatti" id="orari-e-contatti" data-anchor="orari-e-contatti"> <div class="u_1020753305 dmNewParagraph" id="1020753305" data-element-type="paragraph" data-version="5" background-image":""}"="" style="transition: none 0s ease 0s; text-align: left;"> <h3 class="text-align-left m-text-align-left"><span style="display: initial; font-weight: 600;">Orari di apertura</span></h3> 
+</div> <div class="u_1331510804 dmDividerWrapper clearfix" id="1331510804" data-element-type="dDividerId" layout="divider-style-1" data-widget-version="2"><hr class="u_1613101557 dmDivider" style="min-height: 2px; border:none; background:grey" id="1613101557"/></div> 
+ <div class="u_1094921860 default dmHoursOfOperation" id="1094921860" dmle_extension="open_hours" data-element-type="open_hours" data-binding="W3siYmluZGluZ05hbWUiOiJidXNpbmVzc19ob3VycyIsInZhbHVlIjoiY29udGVudF9saWJyYXJ5Lmdsb2JhbC5idXNpbmVzc19ob3VycyJ9XQ==" time_format="24" wr="true" displaytitle="false" forcedisplay="false" icon="true" surround="true" adwords=""> <dl class="open-hours-data"> <div class="open-hours-item"> <dt day="0">Lun - Sab</dt> 
+ <dd> <time>09:30</time> 
+- <time>20:00</time> 
+</dd> 
+</div> 
+ <div class="open-hours-item"> <dt day="6">Domenica</dt> 
+ <dd>Chiuso</dd> 
+</div> 
+</dl> 
+</div> 
+ <div class="u_1358117984 dmNewParagraph" id="1358117984" data-element-type="paragraph" data-version="5" background-image":""}"="" style="text-align: left;"> <h3 class="text-align-left m-text-align-left"><span style="font-weight: 600; display: initial;">Sede e contatti</span></h3> 
+</div> <div class="u_1340820676 dmDividerWrapper clearfix" id="1340820676" data-element-type="dDividerId" layout="divider-style-1" data-widget-version="2"><hr class="u_1593967313 dmDivider" style="min-height: 2px; border:none; background:grey" id="1593967313"/></div> 
+ <div class="u_1604927245 dmNewParagraph" data-element-type="paragraph" id="1604927245" background-image":""}"="" style="transition: none 0s ease 0s; display: block;" data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJzaXRlX3RleHQuaW9saW5kaXJpenpvX2NsaWVudGUifV0=" data-diy-text=""><p class="rteBlock">Via Cotura, 19 - 85050 Barricelle (PZ)</p><p class="rteBlock">Via E. Azimonti, 43- 85050 Villa d'Agri (PZ)</p></div> 
+ <div class="u_1048357185 dmNewParagraph" data-element-type="paragraph" id="1048357185" background-image":""}"="" style="transition: none 0s ease 0s; display: block;" data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLmVtYWlsLmlvbGVtYWlsIn1d" data-diy-text="">mercatinodellusatodal2000@gmail.com</div> 
+ <a class="u_1777866930 default align-center dmCall voipReplacement dmWidget dmNoMark dmWwr" href="tel:+39 339 3523222" contenteditable="false" onclick=";return dm_gaq_push_event('ClickToCall', 'Call',null,'74419a73', this);" id="1777866930" dmle_extension="clicktocall" data-element-type="clicktocall" data-binding="W3siYmluZGluZ05hbWUiOiJwaG9uZSIsInZhbHVlIjoiY29udGVudF9saWJyYXJ5Lmdsb2JhbC5waG9uZS5pb2x0ZWxlZm9ubyJ9XQ==" data-buttonstyle="CONTRAST_ICON" wr="true" data-display-type="block" icon="true" surround="true" description="Chiama ora" adwords="" icon-name="icon-phone" phone="+39 339 3523222" text="" image=""> <span class="iconBg" aria-hidden="true"> <span class="icon hasFontIcon icon-phone"></span> 
+</span> 
+ <span class="text">Chiama ora</span> 
+</a> 
+ <div class="u_1258363075 default dmDefaultGradient hasFullWidth hasFullWidthMobile inlineMap" data-type="inlineMap" data-lat="40.3591769" data-lng="15.8076478" data-address="Via Cotura, 19, Marsicovetere, PZ 85050, IT" data-height="" data-msid="" data-mapurl="" data-lang="it" data-color-scheme="#68d1c8" data-zoom="11" data-layout="layout4" data-popup-display="always" data-popup-show="true" data-popup-title="TRASLOCHI FRATANTUONO" data-popup-title-visible="true" data-popup-description="Via Cotura, 19 - 85050 Marsicovetere - Villa d'Agri (PZ)" data-popup-description-visible="true" id="1258363075" dmle_extension="mapextension" data-element-type="mapextension" modedesktop="map" data-binding="W3siYmluZGluZ05hbWUiOiJhZGRyZXNzIiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsIn1d" modemobile="map" data-popup-display-desktop="always" zoom="11" data-popup-display-mobile="always" data-display-type="block" color-scheme="#68d1c8" layout="layout4" modetablet="map" wr="true" icon="true" surround="true" description="" icon-name="icon-map-marker" street="" city="" country="US" country_full="United States" state="" zip="" business="TRASLOCHI FRATANTUONO" provider="mapbox" lon="15.8076478" lat="40.3591769" faddr="Via Cotura, 19, Marsicovetere, PZ 85050, IT" geocompleteaddress="Via Cotura, 19, Marsicovetere, PZ 85050, IT" addresstodisplay="Via Cotura, 19, Marsicovetere, PZ 85050, IT" dmmapsource="dm"> <div class="mapContainer" style="height: 100%; width: 100%; overflow: hidden; z-index: 0;"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1216789783 dmRespRow hasBackgroundOverlay dmSectionNoParallax" style="text-align: center;" id="1216789783"> <div class="dmRespColsWrapper" id="1692656873"> <div class="dmRespCol small-12 medium-12 large-12" id="1466806775"> <div class="u_1708271823 dmNewParagraph text-align-center" data-element-type="paragraph" id="1708271823" style="transition-duration: initial; display: block; transition-delay: initial; transition-property: none; line-height: initial; transition-timing-function: initial; text-align: center;" data-version="5"> <h2 class="text-align-center m-size-24 size-30"><span class="font-size-30 m-font-size-24" style="color:rgb(255, 255, 255);font-weight:600;display:initial;font-family:Montserrat, 'Montserrat Fallback';">Domande generali</span></h2> 
+</div> <div class="u_1958488854 dmDividerWrapper clearfix" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1958488854"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1768464817"/></div> 
+ <div class="u_1605916171 dmNewParagraph" id="1605916171" style="transition: none 0s ease 0s; display: block; line-height: initial; text-align: center;" data-version="5"><p class="m-size-16 text-align-center size-16"><span class="m-font-size-16 font-size-16" m-font-size-set="true" style="font-weight: 400; color: rgb(255, 255, 255); background-color: transparent; display: initial;">Buongiorno! Hai delle domande sulla nostra attivit&agrave;? Trova le risposte qui di seguito.&nbsp;</span></p></div> <div class="u_1131516259 widget-832a29 dmCustomWidget" data-lazy-load="" data-title="" id="1131516259" dmle_extension="custom_extension" data-element-type="custom_extension" data-binding="W3siYmluZGluZ05hbWUiOiJpdGVtcyIsInZhbHVlIjoic2l0ZV9jb2xsZWN0aW9uLkZBUXMifV0=" data-binding-metadata="eyJ0aXRsZSI6InF1ZXN0aW9uIiwiZGVzY3JpcHRpb24iOiJhbnN3ZXIifQ==" wr="false" icon="false" surround="false" data-widget-id="832a29738c2b44fdb4e63369b1bf458a" data-widget-version="78" data-widget-config="eyJpdGVtcyI6W3siZGVzY3JpcHRpb24iOiJUcmFzbG9jaGkgRnJhdGFudHVvbm8gc2kgdHJvdmEgYSBNYXJzaWNvdmV0ZXJlIChQWikgLSBWaWEgQ290dXJhIDE5IiwidGl0bGUiOiJEb3ZlIHNpIHRyb3ZhIFRyYXNsb2NoaSBGcmF0YW50dW9ubz8ifSx7ImRlc2NyaXB0aW9uIjoiTCdvcmFyaW8gZGkgYXBlcnR1cmEgZGkgVHJhc2xvY2hpIEZyYXRhbnR1b25vIMOoOiBkYSBMdW5lZMOsIGEgU2FiYXRvOiAwOTozMCAtIDIwOjAwIiwidGl0bGUiOiJRdWFsaSBzb25vIGdsaSBvcmFyaSBkaSBhcGVydHVyYSBkaSBUcmFzbG9jaGkgRnJhdGFudHVvbm8/In0seyJkZXNjcmlwdGlvbiI6IlRyYXNsb2NoaSBGcmF0YW50dW9ubyBvZmZyZSBpIHNlZ3VlbnRpIHNlcnZpemk6IFJlc3RhdXJvIE1vYmlsaSwgVHJhc2xvY2hpIENhc3NlZm9ydGksIERlcG9zaXRvIE1vYmlsaSwgU2dvbWJlcm8gQXBwYXJ0YW1lbnRpLCBUcmFzbG9jaGkgZGkgQ2FzZSwgTW9udGFnZ2lvIGUgU21vbnRhZ2dpbyBNb2JpbGksIEZvcm5pdHVyYSBkaSBJbWJhbGxhZ2dpLCBUcmFzbG9jbyBBcHBhcnRhbWVudGksIEltYmFsbGFnZ2lvIGRlbCBDb250ZW51dG8gZGVpIE1vYmlsaSwgVHJhc2xvY2hpIGNvbiBJbWJhbGxvLCBUcmFzbG9jaGkgaW4gVHV0dGEgSXRhbGlhIiwidGl0bGUiOiJRdWFsaSBzb25vIGkgc2Vydml6aSBjaGUgb2ZmcmUgVHJhc2xvY2hpIEZyYXRhbnR1b25vPyJ9LHsiZGVzY3JpcHRpb24iOiJMZWdnaSBsZSByZWNlbnNpb25pIGRpIFRyYXNsb2NoaSBGcmF0YW50dW9ubyBvcHB1cmUgbGFzY2lhIGxhIHR1YSBvcGluaW9uZSBzdSA8YSBocmVmPVwiaHR0cHM6Ly93d3cucGFnaW5lZ2lhbGxlLml0L3RyYXNsb2NoaWZyYXRhbnR1b25vXCIgdGFyZ2V0PVwiX2JsYW5rXCI+UGFnaW5lZ2lhbGxlLml0PC9hPiIsInRpdGxlIjoiUXVhbGkgc29ubyBsZSBvcGluaW9uaSBkZWdsaSB1dGVudGkgZGkgVHJhc2xvY2hpIEZyYXRhbnR1b25vPyJ9LHsiZGVzY3JpcHRpb24iOiJQdW9pIGNvbnRhdHRhcmUgVHJhc2xvY2hpIEZyYXRhbnR1b25vIHRyYW1pdGUgZW1haWw6IG1lcmNhdGlub2RlbGx1c2F0b2RhbDIwMDBAZ21haWwuY29tLCB0ZWxlZm9ubzogMzM5IDM1MjMyMjIsIDM0NSA2MTU5ODk1LCBXaGF0c0FwcDogMzM5IDM1MjMyMjIiLCJ0aXRsZSI6IkNvbWUgcG9zc28gY29udGF0dGFyZSBUcmFzbG9jaGkgRnJhdGFudHVvbm8/In1dLCJleHBhbmRGaXJzdEl0ZW0iOnRydWUsImNvbGxhcHNlT3RoZXJzIjp0cnVlLCJsYXlvdXQiOiJyb3VuZGVkSWNvbiIsInNjaGVtYSI6dHJ1ZX0="><!-- FAQ Schema json-ld --> <script type="application/ld+json">
+
+
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        
+        {
+        "@type": "Question",
+        "name": "Dove si trova Traslochi Fratantuono?",
+        "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Traslochi Fratantuono si trova a Marsicovetere (PZ) - Via Cotura 19"
+            }
+        }
+        ,
+        
+        {
+        "@type": "Question",
+        "name": "Quali sono gli orari di apertura di Traslochi Fratantuono?",
+        "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "L'orario di apertura di Traslochi Fratantuono è: da Lunedì a Sabato: 09:30 - 20:00"
+            }
+        }
+        ,
+        
+        {
+        "@type": "Question",
+        "name": "Quali sono i servizi che offre Traslochi Fratantuono?",
+        "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Traslochi Fratantuono offre i seguenti servizi: Restauro Mobili, Traslochi Casseforti, Deposito Mobili, Sgombero Appartamenti, Traslochi di Case, Montaggio e Smontaggio Mobili, Fornitura di Imballaggi, Trasloco Appartamenti, Imballaggio del Contenuto dei Mobili, Traslochi con Imballo, Traslochi in Tutta Italia"
+            }
+        }
+        ,
+        
+        {
+        "@type": "Question",
+        "name": "Quali sono le opinioni degli utenti di Traslochi Fratantuono?",
+        "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Leggi le recensioni di Traslochi Fratantuono oppure lascia la tua opinione su <a href="https://www.traslochifratantuono.com/\&quot;https://www.paginegialle.it/traslochifratantuono\&quot;" target=\"_blank\">Paginegialle.it</a>"
+            }
+        }
+        ,
+        
+        {
+        "@type": "Question",
+        "name": "Come posso contattare Traslochi Fratantuono?",
+        "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Puoi contattare Traslochi Fratantuono tramite email: mercatinodellusatodal2000@gmail.com, telefono: 339 3523222, 345 6159895, WhatsApp: 339 3523222"
+            }
+        }
+        
+        
+     ]}
+
+
+                </script> 
+<!-- End of FAQ Schema json -ld --> <ul class="accordion-wrapper roundedIcon  " data-first-expanded="true"> <li class="accordion-item"> <div class="accordion-title"> <div class="title-text"> <h3>Dove si trova Traslochi Fratantuono?</h3> 
+</div> 
+ <div class="arrow-wrapper"> <div class="arrow"> <svg class="close" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1152 1792" style="background-color:inherit !important" fill="currentColor"> <path fill="inherit" d="M1075 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"></path> 
+</svg> 
+</div> 
+</div> 
+</div> 
+ <div class="accordion-description"> <div class="section"> <div class="section-inner">Traslochi Fratantuono si trova a Marsicovetere (PZ) - Via Cotura 19</div> 
+</div> 
+</div> 
+</li> 
+ <li class="accordion-item"> <div class="accordion-title"> <div class="title-text"> <h3>Quali sono gli orari di apertura di Traslochi Fratantuono?</h3> 
+</div> 
+ <div class="arrow-wrapper"> <div class="arrow"> <svg class="close" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1152 1792" style="background-color:inherit !important" fill="currentColor"> <path fill="inherit" d="M1075 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"></path> 
+</svg> 
+</div> 
+</div> 
+</div> 
+ <div class="accordion-description"> <div class="section"> <div class="section-inner">L'orario di apertura di Traslochi Fratantuono &egrave;: da Luned&igrave; a Sabato: 09:30 - 20:00</div> 
+</div> 
+</div> 
+</li> 
+ <li class="accordion-item"> <div class="accordion-title"> <div class="title-text"> <h3>Quali sono i servizi che offre Traslochi Fratantuono?</h3> 
+</div> 
+ <div class="arrow-wrapper"> <div class="arrow"> <svg class="close" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1152 1792" style="background-color:inherit !important" fill="currentColor"> <path fill="inherit" d="M1075 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"></path> 
+</svg> 
+</div> 
+</div> 
+</div> 
+ <div class="accordion-description"> <div class="section"> <div class="section-inner">Traslochi Fratantuono offre i seguenti servizi: Restauro Mobili, Traslochi Casseforti, Deposito Mobili, Sgombero Appartamenti, Traslochi di Case, Montaggio e Smontaggio Mobili, Fornitura di Imballaggi, Trasloco Appartamenti, Imballaggio del Contenuto dei Mobili, Traslochi con Imballo, Traslochi in Tutta Italia</div> 
+</div> 
+</div> 
+</li> 
+ <li class="accordion-item"> <div class="accordion-title"> <div class="title-text"> <h3>Quali sono le opinioni degli utenti di Traslochi Fratantuono?</h3> 
+</div> 
+ <div class="arrow-wrapper"> <div class="arrow"> <svg class="close" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1152 1792" style="background-color:inherit !important" fill="currentColor"> <path fill="inherit" d="M1075 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"></path> 
+</svg> 
+</div> 
+</div> 
+</div> 
+ <div class="accordion-description"> <div class="section"> <div class="section-inner">Leggi le recensioni di Traslochi Fratantuono oppure lascia la tua opinione su <a href="https://www.paginegialle.it/traslochifratantuono" target="_blank">Paginegialle.it</a> 
+</div> 
+</div> 
+</div> 
+</li> 
+ <li class="accordion-item"> <div class="accordion-title"> <div class="title-text"> <h3>Come posso contattare Traslochi Fratantuono?</h3> 
+</div> 
+ <div class="arrow-wrapper"> <div class="arrow"> <svg class="close" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1152 1792" style="background-color:inherit !important" fill="currentColor"> <path fill="inherit" d="M1075 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"></path> 
+</svg> 
+</div> 
+</div> 
+</div> 
+ <div class="accordion-description"> <div class="section"> <div class="section-inner">Puoi contattare Traslochi Fratantuono tramite email: mercatinodellusatodal2000@gmail.com, telefono: 339 3523222, 345 6159895, WhatsApp: 339 3523222</div> 
+</div> 
+</div> 
+</li> 
+</ul> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_pa_3791528 dmRespRow" style="text-align: center;" id="pa_3791528"> <div class="dmRespColsWrapper" id="1960314227"> <div class="u_1494922967 dmRespCol small-12 medium-12 large-12" id="1494922967"> <div class="u_1196453722 widget-a7fa7e dmCustomWidget" data-lazy-load="true" data-title="" id="1196453722" dmle_extension="custom_extension" data-element-type="custom_extension" icon="false" surround="false" data-widget-id="a7fa7ec9191147829b5f7697c0448392" data-widget-version="19" data-widget-config="eyJyZXZpZXdzVGl0bGUiOiJSZWNlbnNpb25pIFBhZ2luZUdpYWxsZS5pdCIsInJldmlld0NvbXBvbmVudExheW91dCI6InZlcnRpY2FsIiwibnVtYmVyT2ZSZXZpZXdzIjoiMyIsIm1pbmltdW1Wb3RlIjoiMyIsIm5vcmV2aWV3c1R5cGUiOiJibGFjayIsInBnaXRVc2VyIjoidHJhc2xvY2hpZnJhdGFudHVvbm8ifQ=="> <div id="reviews-container"> <h3 class="main-title">Recensioni PagineGialle.it</h3> 
+ <div id="reviews"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="u_1243182685 dmRespRow dmFooterContent" id="1243182685"> <div class="dmRespColsWrapper" id="1623330520"> <div class="dmRespCol dmFooterCol medium-4 large-4 small-12" id="1467677453"> <div class="u_1831535086 imageWidget align-center" data-widget-type="image" id="1831535086" data-element-type="image" data-binding="W3siYmluZGluZ05hbWUiOiJpbWFnZSIsInZhbHVlIjoic2l0ZV9pbWFnZXMubG9nbyJ9XQ=="> <a href="index.html" id="1031091690"><img src="https://lirp.cdn-website.com/74419a73/dms3rep/multi/opt/05b6a4e2-9dd0-428b-a738-325a6f4d9139-134w.jpeg" id="1933938364" class="" data-dm-image-path="https://irp.cdn-website.com/74419a73/dms3rep/multi/05b6a4e2-9dd0-428b-a738-325a6f4d9139.jpeg" alt="TRASLOCHI FRATANTUONO" title="TRASLOCHI FRATANTUONO" data-diy-image="" onerror="handleImageLoadError(this)" height="108.828125" width="112.0"/></a> 
+</div> 
+ <div class="u_1424524790 dmNewParagraph" data-element-type="paragraph" id="1424524790" background-image":""}"="" style="transition: none 0s ease 0s; display: block;" data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJzaXRlX3RleHQuaW9scGFydGl0YWl2YV9jbGllbnRlIn1d" data-diy-text=""><p class="rteBlock">P.I. 02074360765</p></div> 
+</div> 
+ <div class="dmRespCol medium-4 large-4 small-12" id="1819590812"> <div class="u_1768602472 dmNewParagraph" id="1768602472" style="display: block; transition: none 0s ease 0s; text-align: left;" data-version="5"><p class="text-align-left m-text-align-center"><span style="color: rgb(0, 0, 0); display: initial; font-weight: bold;">SEDE E CONTATTI</span></p></div> <div class="u_1635895683 dmNewParagraph" data-element-type="paragraph" id="1635895683" background-image":""}"="" style="transition: none 0s ease 0s; display: block;" data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJzaXRlX3RleHQuaW9saW5kaXJpenpvX2NsaWVudGUifV0=" data-diy-text=""><p class="rteBlock">Via Cotura, 19 - 85050 Barricelle (PZ)</p><p class="rteBlock">Via E. Azimonti, 43- 85050 Villa d'Agri (PZ)</p></div> 
+ <div class="u_1407420194 dmNewParagraph" data-element-type="paragraph" id="1407420194" background-image":""}"="" style="transition: none 0s ease 0s; display: block;" data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLmVtYWlsLmlvbGVtYWlsIn1d" data-diy-text="">mercatinodellusatodal2000@gmail.com</div> 
+ <div class="u_1710202368 dmNewParagraph" data-element-type="paragraph" id="1710202368" background-image":""}"="" style="transition: none 0s ease 0s; display: block;" data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLnBob25lLmlvbHRlbGVmb25vMSJ9XQ==" data-diy-text="">+39 339 3523222</div> 
+ <div class="u_1668635461 dmNewParagraph" data-element-type="paragraph" id="1668635461" background-image":""}"="" style="transition: none 0s ease 0s; display: block;" data-binding="W3siYmluZGluZ05hbWUiOiJ0ZXh0IiwidmFsdWUiOiJjb250ZW50X2xpYnJhcnkuZ2xvYmFsLnBob25lLmlvbHRlbGVmb25vMiJ9XQ==" data-diy-text="">+39 345 6159895</div> 
+</div> 
+ <div class="dmRespCol medium-4 large-4 small-12" id="1136301295"> <div class="u_1718549833 dmNewParagraph" id="1718549833" style="transition: none 0s ease 0s; text-align: left;" data-version="5"><p class="m-text-align-center text-align-left"><span style="display: initial; color: rgb(0, 0, 0); font-weight: bold;">ORARI DI APERTURA</span></p></div> <div class="u_1813219203 default dmHoursOfOperation" id="1813219203" dmle_extension="open_hours" data-element-type="open_hours" data-binding="W3siYmluZGluZ05hbWUiOiJidXNpbmVzc19ob3VycyIsInZhbHVlIjoiY29udGVudF9saWJyYXJ5Lmdsb2JhbC5idXNpbmVzc19ob3VycyJ9XQ==" time_format="24" wr="true" displaytitle="false" forcedisplay="false" icon="true" surround="true" adwords=""> <dl class="open-hours-data"> <div class="open-hours-item"> <dt day="0">Lun - Sab</dt> 
+ <dd> <time>09:30</time> 
+- <time>20:00</time> 
+</dd> 
+</div> 
+ <div class="open-hours-item"> <dt day="6">Domenica</dt> 
+ <dd>Chiuso</dd> 
+</div> 
+</dl> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1465871800 dmRespRow dmFooterContent" id="1465871800"> <div class="dmRespColsWrapper" id="1995794985"> <div class="dmRespCol small-12 medium-12 large-12" id="1572825853"> <div class="u_1892273028 dmDividerWrapper clearfix" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1892273028"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1805315853"/></div> 
+ <div class="u_1761142037 align-center text-align-center dmSocialHub gapSpacing" id="1761142037" dmle_extension="social_hub" data-element-type="social_hub" data-binding="W3siYmluZGluZ05hbWUiOiJzb2NpYWwiLCJ2YWx1ZSI6ImNvbnRlbnRfbGlicmFyeS5nbG9iYWwuc29jaWFsIn1d" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://facebook.com/mercatinodellusatomarsicovetere" target="_blank" dm_dont_rewrite_url="true" aria-label="facebook" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="https://instagram.com/fratantuonotraslochi" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"> <div class="poweredBy"> <center> <div class="customFooter">Designed by <a class="logo" href="https://www.italiaonline.it" target="_blank"><img src="https://iol-website.italiaonline.it/site-resources/footer_italiaonline.png" alt="Italiaonline" height="18px" onerror="handleImageLoadError(this)"/></a> 
+ <span>|</span> 
+Questa azienda &egrave; presente anche su <a href="https://www.paginegialle.it" target="_blank"><img src="https://iol-website.italiaonline.it/site-resources/footer_pg.png" alt="Pagine Gialle" style="vertical-align:middle" height="25px" onerror="handleImageLoadError(this)"/></a> 
+e <a href="https://www.paginebianche.it" target="_blank"><img src="https://iol-website.italiaonline.it/site-resources/footer_pb.png" alt="Pagine Bianche" style="vertical-align:middle" height="25px" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+</center> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function fonts.jsp-->
+
+
+
+<link rel="preload" href="https://irp.cdn-website.com/fonts/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100..900&amp;subset=latin-ext&amp;display=swap"  as="style" fetchpriority="low" onload="loadCSS(this)" />
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+<link rel="preload" as="style" fetchpriority="low" onload="loadCSS(this)" href="https://static.cdn-website.com/mnlt/production/5473/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+<!-- End of RT CSS Include -->
+
+<link rel="preload" href="https://irp.cdn-website.com/WIDGET_CSS/77ab7eed29156779eb11f556c185995f.css" id="widgetCSS" as="style" fetchpriority="low" onload="loadCSS(this)" />
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+  body[data-page-alias="contact-us"] #dm [data-show-on-page-only="contact-us"] {
+    display: block !important;
+  }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link rel="preload" href="https://irp.cdn-website.com/74419a73/files/74419a73_1.min.css?v=69" id="siteGlobalCss" as="style" fetchpriority="low" onload="loadCSS(this)" />
+
+
+<!-- additional css file per platform -->
+<link
+        type="text/css" rel="stylesheet"
+        href="s/rt/css/iol/iol-runtime.css%3Fversion=2025-05-18T06_48_31.css"
+/>
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody div.u_1155840993
+{
+	background-color:rgb(244,244,244) !important;
+}
+*#dm *.dmBody div.u_Contattiintro
+{
+	background-color:rgb(244,244,244) !important;
+}
+*#dm *.dmBody hr.u_1593967313
+{
+	background-color:rgb(102,102,102) !important;
+}
+*#dm *.dmBody hr.u_1967715900
+{
+	background-color:rgb(102,102,102) !important;
+}
+*#dm *.dmBody hr.u_1613101557
+{
+	background-color:rgb(102,102,102) !important;
+}
+*#dm *.dmBody *.u_1712730786 .dmformsubmit
+{
+	float:LEFT !important;
+}
+*#dm *.dmBody *.u_1216789783:before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1216789783.before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody div.u_1216789783:before
+{
+	opacity:0.46 !important;
+	background-image:linear-gradient(90deg,rgba(4,17,33,1) 0,rgba(102,102,102,1) 100%) !important;
+}
+*#dm *.dmBody div.u_1216789783.before
+{
+	opacity:0.46 !important;
+	background-image:linear-gradient(90deg,rgba(4,17,33,1) 0,rgba(102,102,102,1) 100%) !important;
+}
+*#dm *.dmBody div.u_1216789783 *.bgExtraLayerOverlay
+{
+	background-image:linear-gradient(90deg,rgba(4,17,33,1) 0,rgba(102,102,102,1) 100%) !important;
+}
+*#dm *.dmBody div.u_1958488854 hr
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1131516259 .accordion-description .section-inner
+{
+	color:rgba(255,255,255,1) !important;
+}
+div.u_1094921860 *.open-hours-item dt
+{
+	color:rgba(207,207,207,1) !important;
+}
+div.u_1094921860 *.open-hours-item dd
+{
+	color:rgba(207,207,207,1) !important;
+}
+div.u_1094921860 *.open-hours-item time
+{
+	color:rgba(207,207,207,1) !important;
+}
+div.u_1094921860 *.open-hours-special
+{
+	color:rgba(207,207,207,1) !important;
+}
+*#dm *.dmBody div.u_1094921860 *.open-hours-item dt
+{
+	color:rgba(102,102,102,1) !important;
+}
+*#dm *.dmBody div.u_1094921860 *.open-hours-item dd
+{
+	color:rgba(102,102,102,1) !important;
+}
+*#dm *.dmBody div.u_1094921860 *.open-hours-item time
+{
+	color:rgba(102,102,102,1) !important;
+}
+*#dm *.dmBody div.u_1094921860 *.open-hours-special
+{
+	color:rgba(102,102,102,1) !important;
+}
+*#dm *.dmBody div.u_1208548992
+{
+	background-color:rgba(227,223,223,1) !important;
+}
+*#dm *.dmBody div.u_Contattiintronnn
+{
+	background-color:rgba(227,223,223,1) !important;
+}
+*#dm *.dmBody div.u_pa_3791528
+{
+	background-color:rgba(227,223,223,1) !important;
+}
+*#dm *.dmBody div.u_pa_1369640
+{
+	background-color:rgb(244,244,244) !important;
+}
+*#dm *.dmBody a.u_1777866930 .iconBg
+{
+	display:inline !important;
+}
+div.u_1604927245
+{
+	color:rgba(207,207,207,1) !important;
+}
+*#dm *.dmBody div.u_1604927245
+{
+	color:rgba(102,102,102,1) !important;
+}
+div.u_1048357185
+{
+	color:rgba(207,207,207,1) !important;
+}
+*#dm *.dmBody div.u_1048357185
+{
+	color:rgba(102,102,102,1) !important;
+}
+*#dm *.dmBody *.u_1332787745:before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1332787745.before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1332787745>.bgExtraLayerOverlay
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody div.u_1332787745:before
+{
+	background-color:rgba(0,0,0,1) !important;
+	opacity:0.2 !important;
+}
+*#dm *.dmBody div.u_1332787745.before
+{
+	background-color:rgba(0,0,0,1) !important;
+	opacity:0.2 !important;
+}
+*#dm *.dmBody div.u_1332787745>.bgExtraLayerOverlay
+{
+	background-color:rgba(0,0,0,1) !important;
+	opacity:0.2 !important;
+}
+*#dm *.dmBody hr.u_1614048869
+{
+	background-color:rgb(102,102,102) !important;
+}
+*#dm *.dmBody div.u_1530432004 hr
+{
+	color:rgba(150,80,90,1) !important;
+	background:none !important;
+	height:0 !important;
+	background-color:transparent !important;
+	background-size:initial !important;
+	min-height:0 !important;
+	border-color:currentColor !important;
+	border-width:1px !important;
+	border-top-style:solid !important;
+	border-top-width:3px !important;
+}
+*#dm *.dmBody div.u_1401191197
+{
+	background-color:rgba(243,243,243,1) !important;
+}
+*#dm *.dmBody div.u_1193573191 hr
+{
+	color:rgba(189,84,78,1) !important;
+	background:none !important;
+	height:0 !important;
+	background-color:transparent !important;
+	background-size:initial !important;
+	min-height:0 !important;
+	border-color:currentColor !important;
+	border-width:1px !important;
+	border-top-style:solid !important;
+	border-top-width:4px !important;
+}
+*#dm *.dmBody div.u_1331510804 hr
+{
+	color:rgba(189,84,78,1) !important;
+	background:none !important;
+	height:0 !important;
+	background-color:transparent !important;
+	background-size:initial !important;
+	min-height:0 !important;
+	border-color:currentColor !important;
+	border-width:1px !important;
+	border-top-style:solid !important;
+	border-top-width:4px !important;
+}
+*#dm *.dmBody div.u_1340820676 hr
+{
+	color:rgba(189,84,78,1) !important;
+	background:none !important;
+	height:0 !important;
+	background-color:transparent !important;
+	background-size:initial !important;
+	min-height:0 !important;
+	border-color:currentColor !important;
+	border-width:1px !important;
+	border-top-style:solid !important;
+	border-top-width:4px !important;
+}
+*#dm *.dmBody a.u_1777866930
+{
+	border-radius:0 !important;
+	-moz-border-radius:0 !important;
+	-webkit-border-radius:0 !important;
+	border-style:solid !important;
+	border-width:1px !important;
+	border-color:rgba(189,84,78,1) !important;
+}
+*#dm *.dmBody a.u_1777866930 span.icon
+{
+	color:rgba(189,84,78,1) !important;
+	fill:rgba(189,84,78,1) !important;
+}
+*#dm *.dmBody a.u_1777866930:hover .icon
+{
+	color:rgba(0,0,0,1) !important;
+	fill:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody a.u_1777866930.hover .icon
+{
+	color:rgba(0,0,0,1) !important;
+	fill:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody a.u_1777866930:hover
+{
+	border-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody a.u_1777866930.hover
+{
+	border-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1258363075 .map-popup-title
+{
+	color:rgba(189,84,78,1) !important;
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1131516259 .arrow-wrapper
+{
+	background-color:rgba(189,84,78,1) !important;
+}
+*#dm *.dmBody div.u_1216789783
+{
+	background-repeat:no-repeat !important;
+	background-image:url(https://lirp.cdn-website.com/74419a73/dms3rep/multi/opt/87174003_110916513835857_619640635510489088_n-2880w.jpg) !important;
+}
+*#dm *.dmBody div.u_1196453722 .btn-no-reviews:hover
+{
+	background-color:rgba(0,0,0,1) !important;
+	background-image:none !important;
+	border-color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody div.u_1196453722 .btn-no-reviews.hover
+{
+	background-color:rgba(0,0,0,1) !important;
+	background-image:none !important;
+	border-color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody div.u_1196453722 .btn-no-reviews
+{
+	background-color:rgba(189,84,78,1) !important;
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1332787745
+{
+	background-repeat:no-repeat !important;
+	background-image:url(https://lirp.cdn-website.com/74419a73/dms3rep/multi/opt/129353432_208220144105493_1018300694455736983_n-b0124bda-2880w.jpg) !important;
+}
+*#dm *.dmBody *.u_contatti .dmformsubmit
+{
+	float:LEFT !important;
+}
+
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.dmBody div.u_1155840993
+{
+	padding-top:30px !important;
+	padding-left:40px !important;
+	padding-bottom:47px !important;
+	float:none !important;
+	top:auto !important;
+	max-width:none !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	height:auto !important;
+}
+*#dm *.dmBody div.u_1131516259 .accordion-title
+{
+	font-size:16px !important;
+}
+*#dm *.dmBody div.u_1131516259 .title-text
+{
+	font-size:16px !important;
+}
+*#dm *.dmBody div.u_1131516259 .title-text *
+{
+	font-size:16px !important;
+}
+*#dm *.dmBody div.u_Contattiintro
+{
+	padding-top:50px !important;
+	padding-left:40px !important;
+	padding-bottom:50px !important;
+	float:none !important;
+	top:auto !important;
+	max-width:none !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	height:auto !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+}
+div.u_1094921860
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	max-width:232px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1094921860
+{
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:232px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:10px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1358117984
+{
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	float:none !important;
+	top:0 !important;
+	max-width:100% !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	height:auto !important;
+	display:block !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	margin-top:33px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1020753305
+{
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	float:none !important;
+	top:0 !important;
+	max-width:100% !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	height:auto !important;
+	display:block !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1261459624
+{
+	padding-top:0 !important;
+	padding-left:15px !important;
+	padding-bottom:2px !important;
+	float:none !important;
+	top:0 !important;
+	max-width:100% !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	height:auto !important;
+	display:block !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1131516259
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:20px !important;
+	margin-bottom:20px !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1958488854
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:150px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1708271823
+{
+	margin-bottom:8px !important;
+	margin-top:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:calc(100% - 0px) !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1605916171
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1196453722 #no-reviews-img
+{
+	height:250px !important;
+	width:600px !important;
+}
+*#dm *.dmBody div.u_1494922967
+{
+	margin-left:0 !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:0 !important;
+}
+*#dm *.dmBody div.u_1208548992
+{
+	padding-top:30px !important;
+	padding-left:40px !important;
+	padding-bottom:30px !important;
+	float:none !important;
+	top:auto !important;
+	max-width:none !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	height:auto !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+}
+*#dm *.dmBody div.u_1196453722
+{
+	margin-left:0 !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-top:-10px !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:0 !important;
+}
+*#dm *.dmBody div.u_1729524130
+{
+	margin-left:0 !important;
+	padding-top:0 !important;
+	padding-left:15px !important;
+	padding-bottom:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1848159720
+{
+	margin-left:0 !important;
+	padding-top:50px !important;
+	padding-left:10px !important;
+	padding-bottom:50px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:10px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_1324769539
+{
+	margin-left:0 !important;
+	padding-top:0 !important;
+	padding-left:15px !important;
+	padding-bottom:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_1258363075
+{
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	float:none !important;
+	top:0 !important;
+	max-width:100% !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+	height:295.996px !important;
+	margin-right:0 !important;
+	margin-top:28px !important;
+	margin-bottom:0 !important;
+	important:true !important;
+}
+*#dm *.dmBody div.u_orari-e-contatti
+{
+	margin-left:0 !important;
+	padding-top:0 !important;
+	padding-left:15px !important;
+	padding-bottom:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:15px !important;
+}
+*#dm *.dmBody div.u_FormContattohhh
+{
+	margin-left:0 !important;
+	padding-top:50px !important;
+	padding-left:10px !important;
+	padding-bottom:50px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:10px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_pa_3671590
+{
+	margin-left:0 !important;
+	padding-top:50px !important;
+	padding-left:10px !important;
+	padding-bottom:50px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+	padding-right:10px !important;
+	width:auto !important;
+}
+*#dm *.dmBody div.u_Contattiintronnn
+{
+	padding-top:30px !important;
+	padding-left:40px !important;
+	padding-bottom:30px !important;
+	float:none !important;
+	top:auto !important;
+	max-width:none !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	height:auto !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+}
+*#dm *.dmBody div.u_pa_3791528
+{
+	padding-top:30px !important;
+	padding-left:40px !important;
+	padding-bottom:30px !important;
+	float:none !important;
+	top:auto !important;
+	max-width:none !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	height:auto !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+}
+*#dm *.dmBody div.u_pa_1369640
+{
+	padding-top:50px !important;
+	padding-left:40px !important;
+	padding-bottom:50px !important;
+	float:none !important;
+	top:auto !important;
+	max-width:none !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	height:auto !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+}
+div.u_1604927245
+{
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:left !important;
+}
+div.u_1048357185
+{
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:left !important;
+}
+*#dm *.dmBody div.u_1734701643
+{
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	padding-right:0 !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:0 !important;
+}
+*#dm *.dmBody a.u_1023408985
+{
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:190px !important;
+	position:relative !important;
+	height:50px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:30px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1395975252
+{
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	float:none !important;
+	top:0 !important;
+	max-width:629px !important;
+	left:0 !important;
+	width:calc(100% - 201px) !important;
+	position:relative !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	height:auto !important;
+	display:block !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1530432004
+{
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	float:none !important;
+	top:0 !important;
+	max-width:100% !important;
+	left:0 !important;
+	width:90px !important;
+	position:relative !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+	height:auto !important;
+	display:block !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+}
+*#dm *.dmBody div.u_1401191197
+{
+	padding-top:70px !important;
+	padding-left:90px !important;
+	padding-bottom:70px !important;
+	float:none !important;
+	top:auto !important;
+	max-width:none !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	padding-right:90px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	height:auto !important;
+}
+*#dm *.dmBody div.u_1708048968
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	padding-left:0 !important;
+	float:none !important;
+	top:0 !important;
+	max-width:761px !important;
+	left:0 !important;
+	width:calc(100% - 135px) !important;
+	position:relative !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	height:auto !important;
+	display:block !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1974335256
+{
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	float:none !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	top:0 !important;
+	max-width:705px !important;
+	left:0 !important;
+	width:calc(100% - 163px) !important;
+	margin-top:8px !important;
+	position:relative !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	height:auto !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1478559283
+{
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	float:none !important;
+	top:0 !important;
+	max-width:699px !important;
+	left:0 !important;
+	width:calc(100% - 166px) !important;
+	position:relative !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	height:auto !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:0 !important;
+	margin-bottom:8px !important;
+}
+*#dm *.dmBody div.u_1193573191
+{
+	padding-top:0 !important;
+	padding-left:15px !important;
+	padding-bottom:0 !important;
+	float:none !important;
+	top:0 !important;
+	max-width:100% !important;
+	left:0 !important;
+	width:90px !important;
+	position:relative !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+	height:auto !important;
+	display:block !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	margin-right:auto !important;
+}
+*#dm *.dmBody div.u_1331510804
+{
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	float:none !important;
+	top:0 !important;
+	max-width:150px !important;
+	left:0 !important;
+	width:90px !important;
+	position:relative !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+	height:auto !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1340820676
+{
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	float:none !important;
+	top:0 !important;
+	max-width:150px !important;
+	left:0 !important;
+	width:90px !important;
+	position:relative !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+	height:auto !important;
+	display:block !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	margin-top:-8px !important;
+	margin-bottom:0 !important;
+}
+*#dm *.dmBody a.u_1777866930
+{
+	width:230px !important;
+	height:50px !important;
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	position:relative !important;
+	padding-top:0 !important;
+	padding-left:46px !important;
+	padding-bottom:0 !important;
+	max-width:100% !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+	margin-left:0 !important;
+	margin-top:15px !important;
+	margin-bottom:10px !important;
+	margin-right:auto !important;
+}
+*#dm *.dmBody div.u_1258363075 .map-popup-title
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1258363075 .map-popup-description
+{
+	font-size:16px !important;
+}
+*#dm *.dmBody div.u_1258363075 .mapboxgl-popup-content
+{
+	width:331px !important;
+}
+*#dm *.dmBody div.u_1258363075 .leaflet-popup-content
+{
+	width:331px !important;
+}
+*#dm *.dmBody div.u_1258363075 .leaflet-rrose .leaflet-rrose-content-wrapper
+{
+	width:331px !important;
+}
+*#dm *.dmBody div.u_1712730786 .dmformsubmit
+{
+	width:210px !important;
+	height:50px !important;
+}
+*#dm *.dmBody div.u_1712730786
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:0px !important;
+	margin-bottom:-20px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1216789783
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:50px !important;
+	padding-left:40px !important;
+	padding-bottom:50px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:none !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	background-attachment:fixed !important;
+	background-size:cover !important;
+	background-position:50% 0% !important;
+}
+*#dm *.dmBody div.u_1196453722 .btn-no-reviews
+{
+	height:50px !important;
+	width:237px !important;
+}
+*#dm *.dmBody div.u_1332787745
+{
+	padding-top:140px !important;
+	padding-left:90px !important;
+	padding-bottom:140px !important;
+	padding-right:90px !important;
+	width:auto !important;
+	background-attachment:initial !important;
+	background-size:cover !important;
+	background-position:50% 50% !important;
+}
+*#dm *.dmBody div.u_contatti .dmformsubmit
+{
+	width:210px !important;
+	height:50px !important;
+}
+*#dm *.dmBody div.u_contatti
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:0px !important;
+	margin-bottom:-20px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-30, .size-30, .size-30 > font { font-size: 30px !important; }.font-size-16, .size-16, .size-16 > font { font-size: 16px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+<!-- ========= JS Section ========= -->
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "ITALIAN"
+    window.isSitePreview = false;
+</script>
+<script>
+    window.customWidgetsFunctions["a7fa7ec9191147829b5f7697c0448392~19"] = function (element, data, api) {
+        function startReviews() {
+    const REVIEWS_BASE_URL = 'https://sitesearch.italiaonline.it/adsearch/reviews';
+    const ONE_YEAR_AGO = 'oltre 1 anno fa';
+
+    const SVG_FILE_NAME = data.config.noreviewsType == null ? 'noreviews.svg' : `noreviews-${data.config.noreviewsType}.svg`;
+    const IMG_NO_REVIEWS = `https://iol-website.italiaonline.it/widget/reviews/img/${SVG_FILE_NAME}`;
+    const BTN_NO_REVIEWS = 'Lascia la prima recensione';
+
+    const MILLIS_PER_YEAR = 1000 * 3600 * 24 * 365;
+    
+    const PGIT_USER = data.config.pgitUser
+    const pgitReviewsUrl = `${REVIEWS_BASE_URL}/${PGIT_USER}?vote=${data.config.minimumVote}&size=${data.config.numberOfReviews}`;
+
+    strToDate = function strToDate(strDate) {
+        if (strDate !== '') {
+            const strArray = strDate.split('-');
+            if (strArray.length == 3) {
+                const strCreatedDate = `${strArray[2]}-${strArray[1]}-${strArray[0]}`;
+                const dtCreatedDate = new Date(strCreatedDate);
+                return dtCreatedDate;
+            }
+        }
+        return new Date();
+    }
+
+    loadReviews = function loadReviews() {
+
+        $.getJSON(
+            pgitReviewsUrl,
+            function (data) {
+                let reviews = data.content || [];
+                showReviews(reviews);
+            }
+        )
+            .fail(function (response) {
+                console.log(`Error: ${response.responseText}`);
+                noReviews();
+            });
+    }
+
+    showReviews = function showReviews(reviews) {
+        if (reviews.length > 0) {
+            $("#reviews").empty();
+
+            let reviewsContainer = isVerticalLayout
+                ? '<ul id="reviews-list"/>'
+                : '<div id="reviews-list" class="owl-carousel"/>';
+            let reviewPrefix = isVerticalLayout ? '<li>' : '';
+            let reviewPostfix = isVerticalLayout ? '</li>' : '';
+            let containerClass = isVerticalLayout ? 'vertical-container' : 'horizontal-container';
+
+            let today = new Date();
+            $(reviewsContainer).appendTo("#reviews")
+
+            reviews.forEach(review => {
+                showReview(today, review, containerClass, reviewPrefix, reviewPostfix);
+            });
+
+            let lastElement = `
+                ${reviewPrefix}
+                    <div class="review-item">   
+                        <a href="https://www.paginegialle.it/${PGIT_USER}/commenti" target="_blank" class="review-link">Ulteriori informazioni</a>
+                    </div>
+                ${reviewPostfix}`;
+
+            if (isVerticalLayout) {
+                $(lastElement).appendTo("#reviews-list");
+            }
+            else {
+                $(".owl-carousel").owlCarousel({
+                    loop: true,
+                    items: 1,
+                    margin: 10,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                });
+                $(lastElement).appendTo("#reviews");
+            }
+        }
+        else {
+            noReviews();
+        }
+    }
+
+    showReview = function showReview(today, review, containerClass, reviewPrefix, reviewPostfix) {
+        let dtCreatedDate = strToDate(review.createdDate);
+        let dateField = ((today - dtCreatedDate) / MILLIS_PER_YEAR) > 1
+            ? ONE_YEAR_AGO
+            : review.createdDate;
+
+        let answer = review.answer != null
+            ? `<br><strong>Risposta: ${review.answer}</strong>`
+            : '';
+
+        let element = `
+            ${reviewPrefix}
+                <div class="${containerClass}">
+                    <div class="review-inner">
+                        <div class="review-item">
+                            <div class="review-abstract">                        
+                                <div class="review-user-vote">
+                                    <div class="review-vote-stars">
+                                        ${showReviewStars(review.vote)}
+                                    </div>
+                                </div>
+                                <div class="review-title">
+                                    ${review.title}
+                                </div>
+                            </div>
+                            <div class="review-text">                        
+                                ${review.text}
+                                ${answer}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-header">
+                        <div class="review-profile-image">
+                            <img src="https://www.traslochifratantuono.com/${review.imgUrl}" class="review-round-img">
+                        </div>                    
+                        <div class="review-profile-details">
+                            <div class="review-user">
+                                ${review.userName}
+                            </div>
+                            <div class="review-date">
+                                ${dateField}
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="separator">
+                </div>
+            ${reviewPostfix}`;
+
+        $(element).appendTo("#reviews-list");
+    }
+
+    showReviewStars = function showReviewStars(numStars) {
+        let stars = [];
+        for (i = 0; i < 5; i++) {
+            stars.push(`<span class="star star-${i < numStars ? "full" : "empty"}"></span>`);
+        }
+        return stars.join("");
+    }
+
+    noReviews = function noReviews() {
+        $("#reviews").empty();
+        let noReviewsItem = `
+            <div class="no-reviews-container">
+                <div class="no-reviews-img-container">
+                    <img id="no-reviews-img" src="https://www.traslochifratantuono.com/${IMG_NO_REVIEWS}">
+                </div>
+                <input type="button" class="btn-no-reviews" onclick="window.open('https://www.paginegialle.it/${PGIT_USER}/commenti','_blank')" value="${BTN_NO_REVIEWS}"/>
+            </div>
+        `;
+        $(noReviewsItem).appendTo("#reviews");
+    }
+
+    loadReviews();
+}
+
+/* Loading all scripts and widget */
+const isVerticalLayout = data.config.reviewComponentLayout === 'vertical';
+
+function addCss(url) {
+    let id = url.split('/').slice(-1)[0];
+
+    if (!document.getElementById(id)) {
+        console.log(`loading CSS ${url} with id ${id}`);
+        let link = document.createElement('link');
+        link.id = id;
+        link.rel = "stylesheet";
+        link.type = "text/css";
+        link.href = url;
+        document.head.appendChild(link);
+    }
+}
+
+function importScript(url, callback) {
+    let id = url.split('/').slice(-1)[0];
+
+    if (!document.getElementById(id)) {
+        console.log(`loading SCRIPT ${url} with id ${id}`);
+        let script = document.createElement('script');
+        script.id = id;
+        script.src = url;
+        script.onload = callback;
+        document.head.appendChild(script);
+    } else {
+        callback()
+    }
+}
+
+function startWidgetCallback() {    
+    console.log("Start On Load Reviews");
+    dmAPI.runOnReady('startReviews', startReviews());
+}
+    
+if (isVerticalLayout) {
+    // If Vertical layout DO NOT load the owl carousel plugin
+    startWidgetCallback()
+}
+else {
+    addCss("https://iol-website.italiaonline.it/widget/lib/owlcarousel/owl.carousel.min.css");
+    importScript("https://iol-website.italiaonline.it/widget/lib/owlcarousel/owl.carousel.min.js", startWidgetCallback);
+}
+    };
+</script>
+<script>
+    window.customWidgetsFunctions["832a29738c2b44fdb4e63369b1bf458a~78"] = function (element, data, api) {
+        
+
+$(element).find('[data-first-expanded="true"]').attr('data-first-expanded', 'false').find('.accordion-item').eq(0).addClass('expanded');
+
+$(element).off('click.toggle').on('click.toggle', '.accordion-title', function(){
+    if(data.config.collapseOthers){
+        $(this).parents('.accordion-item').siblings().removeClass('expanded');
+        // $(element).find('.accordion-item').not(this).removeClass('expanded');
+    }
+    $(this).parents('.accordion-item').toggleClass('expanded');
+});
+
+
+    };
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_5473";
+    var build = "2025-05-18T06_48_31";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2025-05-18T06_48_31";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+<script type="text/javascript" id='d-js-jquery'
+        src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+<!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<script id="d-js-ecwid-cb-glue" data-swh-uuid="da04740573534e99afad4d589b308aad">
+
+window.ec=window.ec||{},window.ec.config=ec.config||{},window.ec.config.tracking=ec.config.tracking||{},window.ec.config.tracking.ask_consent=!0;let _ecwidLoadedForCb=!1;function _acceptConsentForEcwid(e){e.preferences&&e.statistics&&!e.marketing?Ecwid.setTrackingConsent("ANALYTICS_ONLY"):!e.preferences||e.statistics||e.marketing?Ecwid.setTrackingConsent("ACCEPT"):Ecwid.setTrackingConsent("PERSONALIZATION_ONLY")}function _onEcwidLoadedCb(){Cookiebot&&Cookiebot.consented?"function"==typeof Ecwid.setTrackingConsent?_acceptConsentForEcwid(Cookiebot.consent):window.Ecwid.OnAPILoaded.add(function(){_acceptConsentForEcwid(Cookiebot.consent)}):Cookiebot&&Cookiebot.declined?Ecwid.setTrackingConsent("DECLINE"):_ecwidLoadedForCb=!0}window.addEventListener("message",e=>{"ecwid-script-loaded"===e.data.type&&_onEcwidLoadedCb()}),window.addEventListener("CookiebotOnAccept",async()=>{_ecwidLoadedForCb&&_acceptConsentForEcwid(Cookiebot.consent)},!1),window.addEventListener("CookiebotOnDecline",async()=>{_ecwidLoadedForCb&&Ecwid.setTrackingConsent("DECLINE")},!1);
+
+</script>
+<script id="CookiebotConfiguration" type="application/json" data-cookieconsent="ignore" data-swh-uuid="da04740573534e99afad4d589b308aad">
+
+{"TagConfiguration":[{"id":"d-js-core","ignore":true},{"id":"d-js-params","ignore":true},{"id":"d-js-jquery","ignore":true},{"id":"d-js-load-css","ignore":true},{"id":"d-js-dmapi","ignore":true}]}
+
+</script>
+<script data-cookieconsent="ignore" data-swh-uuid="da04740573534e99afad4d589b308aad">
+
+function _cbSetGtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],_cbSetGtag("consent","default",{"ad_personalization":"denied","ad_storage":"denied","ad_user_data":"denied","analytics_storage":"denied","functionality_storage":"denied","personalization_storage":"denied","security_storage":"granted","wait_for_update":500}),_cbSetGtag("set","ads_data_redaction",!0),_cbSetGtag("set","url_passthrough",!0)
+
+</script>
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="a854b7ba-7720-4bde-a5a6-f8250877a176" data-blockingmode="auto" type="text/javascript" data-swh-uuid="da04740573534e99afad4d589b308aad">
+</script>
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/5473';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/5473';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =false;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = true;
+    rtFlags["ecom.ecwid.storefrontV3.enabled"] = false;
+    rtFlags["ecom.ecwid.old.store.fix.facebook.share"] = true;
+    rtFlags["feature.flag.photo.gallery.exact.size"] =true;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["editor.classicHybrid.photogallery.fix"] =true;
+    rtFlags["runtime.lottieOverflow"] =false;
+    rtFlags["runtime.monitoring.sentry.ignoreErrors"] = "";
+    rtFlags["contact.form.browserValidation.enabled"] =true;
+    rtFlags["streamline.monolith.personalization.supportMultipleConditions.enabled"] =false;
+    rtFlags["runtime.cwv.report.cls.enabled"] =true;
+    rtFlags["editor.link.on.container"] =true;
+    rtFlags["flex.runtime.popup.with.show"] =true;
+    rtFlags["contact.form.useActiveForm"] =true;
+    rtFlags["runtime.ssr.productStore.internal.observer"] =true;
+    rtFlags["runtime.ssr.productCustomizations"] =true;
+    rtFlags["flex.megaMenu.a11y"] =false;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/5473/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static.cdn-website.com/mnlt/production/5473/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+    if (!window.location.search) {
+        return;
+    }
+	const cleanParams = window.location.search.substring(1); // Strip ?
+	const queryParams = cleanParams.split('&');
+
+	const expires = 'expires=' + new Date().getTime() + 24 * 60 * 60 * 1000;
+	const domain = 'domain=' + window.location.hostname;
+	const path = "path=/";
+
+	queryParams.forEach((param) => {
+		const [key, value = ''] = param.split('=');
+		if (key.startsWith('utm_')) {
+			const cookieName = "_dm_rt_" + key.substring(4);
+			const cookie = cookieName + "=" + value;
+			const joined = [cookie, expires, domain, path].join(";");
+			document.cookie = joined;
+		}
+	});
+}());
+</script>
+<script type="text/javascript" >
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+  appId: '74419a73'
+});
+
+// snowplow queries element styles so we wait until CSS calculations are done.
+requestAnimationFrame(() => {
+	dmsnowplow('trackPageView');
+	_dm_insite.forEach((rule) => {
+		// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+		// the tracking is in popup.js
+		if (rule.actionName !== "popup") {
+			dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+		}
+		window?.waitForDeferred?.('dmAjax', () => {
+			$.DM.events.trigger('event-ruleTriggered', {value: rule});
+		});
+	});
+});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Chiudi (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Condividi"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Passa alla modalità a schermo intero"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom avanti/indietro"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Precedente (freccia sinistra)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Successivo (freccia destra)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="it_IT"></div>
+<!-- Alias: 74419a73 -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+	window?.waitForDeferred?.('dmAjax', () => {
+		// Collects client data and updates cookies used by smart sites
+		window.expireDays = 365;
+		window.visitLength = 30 * 60000;
+		$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+			setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+	});
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<!--  End Script tags -->
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+<!--  Begin Product Custom HTML Markup -->
+<script type="text/javascript" src="https://iol-website.italiaonline.it/script/iol-body-np.js"></script>
+<script type="text/javascript" src="https://iol-website.italiaonline.it/script/iol-body.js"></script>
+ <script> 
+ if(document.URL.contains('signin')) {
+  var elementExists = document.getElementsByClassName("signup-state state");
+  if (elementExists !== null){
+   document.querySelectorAll('.btnText')[0].innerHTML = '<span class="btnText">Connettiti con Google</span>'
+   var divider=document.querySelectorAll(".or-divider")[0]; 
+   var dividertext="<span>Oppure</span>";
+   divider.innerHTML=dividertext;
+   var title=document.querySelectorAll(".title")[0]; 
+   var titletext="Iscriviti";
+   title.innerHTML=titletext;
+   var terms=document.querySelector(".terms-of-service"); 
+   var termstext="Continuando, accetti le nostre Condizioni d'uso e l'Informativa sulla privacy.";
+   terms.innerHTML=termstext;
+   $("#firstname").attr("placeholder", "Nome");
+   $("#lastname").attr("placeholder", "Cognome");
+   $("#submit-button > input[type=submit]").attr("value", "Registrati");
+   document.querySelector('.go-to-login-section.link-description').innerHTML = 'Sei gi&agrave; iscritto? <a class="login-link section-link">Log In</a>'
+  }
+  var loginlink = document.querySelector('.go-to-login-section.link-description');
+  loginlink.addEventListener("click", function() {
+   document.querySelector('.not-a-member-text.link-description').childNodes[0].nodeValue = 'Non sei ancora registrato?';
+   document.querySelector('.not-a-member-link.section-link').innerText = 'Iscriviti'
+   var title=document.querySelectorAll(".title")[1]; 
+   var titletext="Accesso";
+   title.innerHTML=titletext;
+   var divider=document.querySelectorAll(".or-divider")[1]; 
+   var dividertext="<span>Oppure</span>";
+   divider.innerHTML=dividertext;
+   document.querySelectorAll('.btnText')[2].innerHTML = '<span class="btnText">Connettiti con Google</span>'
+   document.querySelector('.forgot-password-link.section-link').innerHTML = 'Hai dimenticato la password?'
+  }, false);
+  var forgetlink = document.querySelector('.forgot-password-link.section-link');
+  forgetlink.addEventListener("click", function() {
+   document.querySelector('.go-to-login-section.section-link.link-description').innerHTML = 'Torna per accedere'
+   document.querySelector('.form-description').innerHTML = 'Inserisci il tuo indirizzo email'
+   var title=document.querySelectorAll(".title")[2]; 
+   var titletext="Resetta la password";
+   title.innerHTML=titletext;
+  }, false);
+ }
+ </script>
+<script>
+
+ let __fixedCssLoad = false;
+
+function __loadCSSLinks() {
+    setTimeout(() => {
+        if(!__fixedCssLoad && window.loadCSS) {
+            // fix css links
+            __fixCssLinks()
+            
+        } else {
+          console.log("re-running self waiting for fix css to exist")
+            __loadCSSLinks()
+        }
+    },1)
+}
+function __fixCssLinks(cb) {
+    var links = document.getElementsByTagName("link");
+    for (var i = 0; i < links.length; i++) {
+      if(links[i].onload) {
+        
+        
+        
+        loadCSS(links[i]);
+        
+      }
+    }
+    __fixedCssLoad = true;
+}
+
+window.addEventListener('CookiebotOnDialogDisplay', function (e) {
+    __fixCssLinks()
+}, false);
+if(dmAPI.getCurrentEnvironment() === 'live') { __loadCSSLinks(); }
+</script>
+<!--Russ fix for conflicting CSS with cookiebot-->
+<style>#CybotCookiebotDialog .CybotCookiebotDialogHide:not(.CybotCookiebotDialogShow) { display:none!important} </style><!--  End Product Custom HTML Markup -->
+</body>
+</html>
